@@ -1,13 +1,15 @@
-import React from 'react'
-import './styles/App.css'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./styles/App.css";
+import Signin from "./pages/Signin";
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <div>App Page</div>
+      <Routes>
+        <Route path="/" element={<Signin />} />
+        <Route path="sign-in" element={<Signin />} />
+      </Routes>
     </>
-  )
+  );
 }
-
-export default App
