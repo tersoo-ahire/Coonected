@@ -1,1 +1,115 @@
-/*# sourceMappingURL=App.css.map */
+#root {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.sign-in {
+  background-color: #E7F0FA;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.sign-in .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3em 4em;
+  gap: 3em;
+}
+.sign-in .left img {
+  width: 60px;
+}
+.sign-in .left .sub {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 1em;
+}
+.sign-in .left .sub .social-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  width: 100%;
+}
+.sign-in .left .sub .social-container .social-btn1, .sign-in .left .sub .social-container .social-btn2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  width: 50%;
+  height: auto;
+  padding: 1em 0em;
+  border: 1.2px solid #000000;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.6px;
+  color: #000000;
+  gap: 0.5rem;
+}
+.sign-in .left .sub .social-container .social-btn1 img, .sign-in .left .sub .social-container .social-btn2 img {
+  width: 24px;
+}
+.sign-in .left .sub .social-container .social-btn2 {
+  border: 1.2px solid #3377FF;
+}
+.sign-in .left .sub input {
+  background-color: inherit;
+  padding: 1em 1.5em;
+  width: 100%;
+  height: auto;
+  border: 1.2px solid #4F4F4F;
+  border-radius: 5px;
+  color: #000000;
+}
+.sign-in .left .sub .checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.sign-in .left .sub .checkbox-container #remember {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  font-size: 0.875rem;
+  gap: 0.5em;
+}
+.sign-in .left .sub .checkbox-container #remember img {
+  margin: 0;
+  width: 16px;
+}
+.sign-in .left .sub .checkbox-container a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  text-decoration: none;
+  color: #3377FF;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.sign-in .left .sub .submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  width: 200px;
+  height: auto;
+  background: #3377FF;
+  border: none;
+  border-radius: 7px;
+}
+.sign-in .right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #3377FF;
+}/*# sourceMappingURL=App.css.map */
