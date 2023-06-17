@@ -30,7 +30,7 @@ export default function Signin() {
                         </button>
                     </div>
                     <p>OR</p>
-                    <input type="email" name="email" placeholder="johndoes@gmail.com" required />
+                    <input type="email" name="email" placeholder="johndoe@gmail.com" required />
                     <input type="password" name="pasword" placeholder="password" required />
                     <div className="checkbox-container">
                         <div id="remember">
