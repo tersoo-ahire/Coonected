@@ -4,6 +4,7 @@ import "./styles/App.css";
 import Signin from "./pages/Sign_In";
 import Signup from "./pages/Sign_Up";
 import ForgetPassword from "./pages/ForgetPassword";
+import InterestSection from "./pages/Interests";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="sign-in" element={<Signin />} />
         <Route path="sign-up" element={<Signup />} />
         <Route path="forget-password" element={<ForgetPassword />} />
+        <Route path="sign-in/interests" element={<InterestSection />} />
       </Routes>
     </>
   );

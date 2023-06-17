@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom"
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom"
 import logo from "/logo.svg";
 import apple from "../assets/signin/apple.svg";
 import google from "../assets/signin/google.svg";
@@ -11,6 +11,22 @@ import gamepad from "../assets/signin/gamepad.svg";
 
 
 export default function Signin() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const signInButton = document.getElementById("signin-btn");
+        if (signInButton) {
+            const handleClick = () => {
+                navigate("sign-in/interests");
+            };
+            signInButton.addEventListener("click", handleClick);
+
+            return () => {
+                signInButton.removeEventListener("click", handleClick);
+            };
+        }
+    }, [navigate]);
+
     return (
         // SIGN IN PAGE
         <section className="sign-in">
@@ -39,7 +55,7 @@ export default function Signin() {
                         </div>
                         <Link to="/forget-password" >Forgot Password?</Link>
                     </div>
-                    <button className="submit">Sign In</button>
+                    <button id="signin-btn" className="submit">Sign In</button>
                 </div>
             </div>
 
@@ -56,7 +72,7 @@ export default function Signin() {
                 <img src={headphone} id="headphone" />
                 <img src={vrheadset} id="vrheadset" />
                 <img src={younglady} id="younglady" />
-                <img src={gamepad} id="gamepad" /> 
+                <img src={gamepad} id="gamepad" />
             </div>
         </section>
     );
