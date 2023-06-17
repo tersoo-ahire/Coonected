@@ -19,24 +19,17 @@ export default function Signup() {
                     <div className="social-container">
                         <button className="social-btn1">
                             <img src={apple} alt="Apple Icon" />
-                            Sign up via Apple
+                            Signup via Apple
                         </button>
                         <button className="social-btn2">
                             <img src={google} alt="Google Icon" />
-                            Sign up via Google
+                            Signup via Google
                         </button>
                     </div>
                     <p>OR</p>
                     <input type="email" name="email" placeholder="johndoe@gmail.com" required />
                     <input type="password" name="pasword" placeholder="password" required />
                     <input type="password" name="pasword" placeholder="confirm password" required />
-                    <div className="checkbox-container">
-                        <div id="remember">
-                            <img src={tick} alt="Tick Icon" />
-                            <p>Remember me</p>
-                        </div>
-                        <Link to="#" >Forgot Password?</Link>
-                    </div>
                     <button className="submit">Sign Up</button>
                 </div>
             </div>
@@ -46,7 +39,9 @@ export default function Signup() {
                     <div className="signup-container">
                         <h1>It’s happening right here</h1>
                         <p>Coonected makes it happen!</p>
-                        <button className="submit2">Sign Up</button>
+                        <button className="submit2">
+                            <Link to={"/sign-in"}>Sign In</Link>
+                        </button>
                     </div>
                 </div>
                 <img src={man} id="man" />

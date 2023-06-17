@@ -11,7 +11,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 1em 1.5em;
+  padding: 1em 0em;
   width: 200px;
   height: auto;
   background: #3377FF;
@@ -19,11 +19,19 @@
   border-radius: 7px;
   font-weight: bold;
 }
+.submit a, .sign-in .right .right-sub .signup-container .submit2 a {
+  text-decoration: none;
+  color: #3377FF;
+  width: 100%;
+}
 
 .submit:hover, .sign-in .right .right-sub .signup-container .submit2:hover {
   background-color: inherit;
   color: #3377FF;
   border: 2px solid #3377FF;
+}
+.submit:hover a, .sign-in .right .right-sub .signup-container .submit2:hover a {
+  color: #ffffff;
 }
 
 .sign-in {
@@ -115,6 +123,20 @@
   font-size: 0.875rem;
   font-weight: bold;
 }
+.sign-in .left .sub #back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-decoration: none;
+  color: #3377FF;
+  font-size: 0.875rem;
+  font-weight: bold;
+  gap: 1em;
+}
+.sign-in .left .sub #back img {
+  width: 10px;
+}
 .sign-in .right {
   display: flex;
   flex-direction: column;
@@ -167,11 +189,15 @@
 }
 .sign-in .right .right-sub .signup-container:nth-child(odd) {
   margin-top: 6em;
+  gap: 1em;
 }
 .sign-in .right .right-sub .signup-container:nth-child(odd) h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   width: 70%;
   margin: auto;
+}
+.sign-in .right .right-sub .signup-container:nth-child(odd) .submit2 {
+  margin-top: 1em;
 }
 .sign-in .right #headphone {
   width: 150px;
@@ -202,9 +228,9 @@
   z-index: 1;
 }
 .sign-in .right #man {
-  width: 250px;
+  width: 280px;
   position: absolute;
-  bottom: 1rem;
+  bottom: 0rem;
   right: 14rem;
   z-index: 1;
 }/*# sourceMappingURL=App.css.map */

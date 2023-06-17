@@ -37,7 +37,7 @@ export default function Signin() {
                             <img src={tick} alt="Tick Icon" />
                             <p>Remember me</p>
                         </div>
-                        <Link to="#" >Forgot Password?</Link>
+                        <Link to="/forget-password" >Forgot Password?</Link>
                     </div>
                     <button className="submit">Sign In</button>
                 </div>
@@ -48,7 +48,9 @@ export default function Signin() {
                     <div className="signup-container">
                         <h1>New Here</h1>
                         <p>You can create here, express yourself and be seen.</p>
-                        <button className="submit2">Sign Up</button>
+                        <button className="submit2">
+                            <Link to={"/sign-up"}>Sign Up</Link>
+                        </button>
                     </div>
                 </div>
                 <img src={headphone} id="headphone" />
