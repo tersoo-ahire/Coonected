@@ -44,10 +44,12 @@ export default function Signin() {
             </div>
 
             <div className="right">
-                <div className="signup-container">
-                    <h1>New Here</h1>
-                    <p>You can create here, express yourself and be seen.</p>
-                    <button className="submit2">Sign Up</button>
+                <div className="right-sub">
+                    <div className="signup-container">
+                        <h1>New Here</h1>
+                        <p>You can create here, express yourself and be seen.</p>
+                        <button className="submit2">Sign Up</button>
+                    </div>
                 </div>
                 <img src={headphone} id="headphone" />
                 <img src={vrheadset} id="vrheadset" />
