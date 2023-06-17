@@ -6,6 +6,26 @@
   min-height: 100vh;
 }
 
+.submit, .sign-in .right .signup-container .submit2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.5em;
+  width: 200px;
+  height: auto;
+  background: #3377FF;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.submit:hover, .sign-in .right .signup-container .submit2:hover {
+  background-color: inherit;
+  color: #3377FF;
+  border: 2px solid #3377FF;
+}
+
 .sign-in {
   background-color: #E7F0FA;
   min-height: 100vh;
@@ -93,23 +113,72 @@
   text-decoration: none;
   color: #3377FF;
   font-size: 0.875rem;
-  font-weight: 600;
-}
-.sign-in .left .sub .submit {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 1.5em;
-  width: 200px;
-  height: auto;
-  background: #3377FF;
-  border: none;
-  border-radius: 7px;
+  font-weight: bold;
 }
 .sign-in .right {
   display: flex;
   flex-direction: column;
   width: 50%;
   background-color: #3377FF;
+  padding: 3em;
+  position: relative;
+}
+.sign-in .right .signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  gap: 0.5em;
+}
+.sign-in .right .signup-container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+.sign-in .right .signup-container p {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.sign-in .right .signup-container .submit2 {
+  background: #ffffff;
+  color: #3377FF;
+  margin-top: 2.5em;
+}
+.sign-in .right .signup-container .submit2:hover {
+  background-color: inherit;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.sign-in .right #headphone {
+  width: 150px;
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
+  z-index: 20;
+}
+.sign-in .right #vrheadset {
+  width: 125px;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  z-index: 20;
+}
+.sign-in .right #younglady {
+  width: 125px;
+  position: absolute;
+  bottom: 0rem;
+  left: 3rem;
+  z-index: 20;
+}
+.sign-in .right #gamepad {
+  width: 125px;
+  position: absolute;
+  bottom: 8rem;
+  right: 3.125rem;
+  z-index: 20;
 }/*# sourceMappingURL=App.css.map */

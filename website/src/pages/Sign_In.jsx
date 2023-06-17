@@ -4,6 +4,10 @@ import logo from "/logo.svg";
 import apple from "../assets/signin/apple.svg";
 import google from "../assets/signin/google.svg";
 import tick from "../assets/signin/tick.svg";
+import headphone from "../assets/signin/headphones.svg";
+import vrheadset from "../assets/signin/vrheadset.svg";
+import younglady from "../assets/signin/younglady.svg";
+import gamepad from "../assets/signin/gamepad.svg";
 
 
 export default function Signin() {
@@ -39,7 +43,17 @@ export default function Signin() {
                 </div>
             </div>
 
-            <div className="right"></div>
+            <div className="right">
+                <div className="signup-container">
+                    <h1>New Here</h1>
+                    <p>You can create here, express yourself and be seen.</p>
+                    <button className="submit2">Sign Up</button>
+                </div>
+                <img src={headphone} id="headphone" />
+                <img src={vrheadset} id="vrheadset" />
+                <img src={younglady} id="younglady" />
+                <img src={gamepad} id="gamepad" /> 
+            </div>
         </section>
     );
 }
