@@ -7,12 +7,14 @@ import ForgetPassword from "./pages/ForgetPassword";
 import InterestSection from "./pages/Interests";
 import Invitation from "./pages/Invitation";
 import Success from "./pages/InvitationSuccess";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Signin />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/forget-password" element={<ForgetPassword />} />

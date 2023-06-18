@@ -5,7 +5,7 @@ import success from "../assets/invitation/success.svg";
 export default function Success(){
     return (
         // INVITATION SUCCESS PAGE
-        <div className="invitation-page">
+        <section className="invitation-page">
             <div className="sub2">
                 <h1>Success</h1>
                 <p>Invitation successfully sent!</p>
@@ -14,6 +14,6 @@ export default function Success(){
                     Return to Homepage
                 </Link>
             </div>
-        </div>
+        </section>
     )
 }
