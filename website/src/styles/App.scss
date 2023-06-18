@@ -390,7 +390,7 @@
     align-items: center;
     justify-content: center;
     padding: 3em 0em;
-    background: url("../assets/invitation/backgroundgradient.png")fixed center no-repeat;
+    background: url("../assets/invitation/backgroundgradient.png") fixed center no-repeat;
 
     .sub {
         display: flex;
@@ -486,6 +486,26 @@
                 opacity: 1;
             }
 
+        }
+    }
+    .sub2 {
+        @extend .sub;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img {
+            max-width: 200px;
+        }
+        a {
+            @extend .submit;
+            text-decoration: none;
+            color: $white;
+        }
+
+        a:hover {
+            background-color: $primaryblue;
+            color: $white;
+            border: none;
         }
     }
 }

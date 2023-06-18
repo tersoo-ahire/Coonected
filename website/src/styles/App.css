@@ -6,7 +6,7 @@
   min-height: 100vh;
 }
 
-.submit, .sign-in .right .right-sub .signup-container .submit2 {
+.submit, .invitation-page .sub2 a, .sign-in .right .right-sub .signup-container .submit2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,18 +19,18 @@
   border-radius: 7px;
   font-weight: bold;
 }
-.submit a, .sign-in .right .right-sub .signup-container .submit2 a {
+.submit a, .invitation-page .sub2 a a, .sign-in .right .right-sub .signup-container .submit2 a {
   text-decoration: none;
   color: #3377FF;
   width: 100%;
 }
 
-.submit:hover, .sign-in .right .right-sub .signup-container .submit2:hover {
+.submit:hover, .invitation-page .sub2 a:hover, .sign-in .right .right-sub .signup-container .submit2:hover {
   background-color: inherit;
   color: #3377FF;
   border: 2px solid #3377FF;
 }
-.submit:hover a, .sign-in .right .right-sub .signup-container .submit2:hover a {
+.submit:hover a, .invitation-page .sub2 a:hover a, .sign-in .right .right-sub .signup-container .submit2:hover a {
   color: #ffffff;
 }
 
@@ -49,23 +49,23 @@
 .sign-in .left img {
   width: 60px;
 }
-.sign-in .left .sub {
+.sign-in .left .sub, .sign-in .left .invitation-page .sub2, .invitation-page .sign-in .left .sub2 {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1em;
 }
-.sign-in .left .sub h1 {
+.sign-in .left .sub h1, .sign-in .left .invitation-page .sub2 h1, .invitation-page .sign-in .left .sub2 h1 {
   font-weight: 800;
   font-size: 2.375rem;
 }
-.sign-in .left .sub .social-container {
+.sign-in .left .sub .social-container, .sign-in .left .invitation-page .sub2 .social-container, .invitation-page .sign-in .left .sub2 .social-container {
   display: flex;
   flex-direction: row;
   gap: 1em;
   width: 80%;
 }
-.sign-in .left .sub .social-container .social-btn1, .sign-in .left .sub .social-container .social-btn2 {
+.sign-in .left .sub .social-container .social-btn1, .sign-in .left .invitation-page .sub2 .social-container .social-btn1, .invitation-page .sign-in .left .sub2 .social-container .social-btn1, .sign-in .left .sub .social-container .social-btn2, .sign-in .left .invitation-page .sub2 .social-container .social-btn2, .invitation-page .sign-in .left .sub2 .social-container .social-btn2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,13 +82,13 @@
   color: #000000;
   gap: 0.5rem;
 }
-.sign-in .left .sub .social-container .social-btn1 img, .sign-in .left .sub .social-container .social-btn2 img {
+.sign-in .left .sub .social-container .social-btn1 img, .sign-in .left .invitation-page .sub2 .social-container .social-btn1 img, .invitation-page .sign-in .left .sub2 .social-container .social-btn1 img, .sign-in .left .sub .social-container .social-btn2 img, .sign-in .left .invitation-page .sub2 .social-container .social-btn2 img, .invitation-page .sign-in .left .sub2 .social-container .social-btn2 img {
   width: 20px;
 }
-.sign-in .left .sub .social-container .social-btn2 {
+.sign-in .left .sub .social-container .social-btn2, .sign-in .left .invitation-page .sub2 .social-container .social-btn2, .invitation-page .sign-in .left .sub2 .social-container .social-btn2 {
   border: 1.2px solid #3377FF;
 }
-.sign-in .left .sub input {
+.sign-in .left .sub input, .sign-in .left .invitation-page .sub2 input, .invitation-page .sign-in .left .sub2 input {
   background-color: inherit;
   padding: 1em 1.5em;
   width: 60%;
@@ -97,14 +97,14 @@
   border-radius: 5px;
   color: #000000;
 }
-.sign-in .left .sub .checkbox-container {
+.sign-in .left .sub .checkbox-container, .sign-in .left .invitation-page .sub2 .checkbox-container, .invitation-page .sign-in .left .sub2 .checkbox-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 60%;
 }
-.sign-in .left .sub .checkbox-container #remember {
+.sign-in .left .sub .checkbox-container #remember, .sign-in .left .invitation-page .sub2 .checkbox-container #remember, .invitation-page .sign-in .left .sub2 .checkbox-container #remember {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -112,11 +112,11 @@
   font-size: 0.875rem;
   gap: 0.5em;
 }
-.sign-in .left .sub .checkbox-container #remember img {
+.sign-in .left .sub .checkbox-container #remember img, .sign-in .left .invitation-page .sub2 .checkbox-container #remember img, .invitation-page .sign-in .left .sub2 .checkbox-container #remember img {
   margin: 0;
   width: 16px;
 }
-.sign-in .left .sub .checkbox-container a {
+.sign-in .left .sub .checkbox-container a, .sign-in .left .invitation-page .sub2 .checkbox-container a, .invitation-page .sign-in .left .sub2 .checkbox-container a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -126,7 +126,7 @@
   font-size: 0.875rem;
   font-weight: bold;
 }
-.sign-in .left .sub #back {
+.sign-in .left .sub #back, .sign-in .left .invitation-page .sub2 #back, .invitation-page .sign-in .left .sub2 #back {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -137,7 +137,7 @@
   font-weight: bold;
   gap: 1em;
 }
-.sign-in .left .sub #back img {
+.sign-in .left .sub #back img, .sign-in .left .invitation-page .sub2 #back img, .invitation-page .sign-in .left .sub2 #back img {
   width: 10px;
 }
 .sign-in .right {
@@ -250,16 +250,16 @@
 .interests #logo {
   width: 60px;
 }
-.interests .sub {
+.interests .sub, .interests .invitation-page .sub2, .invitation-page .interests .sub2 {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
-.interests .sub h1 {
+.interests .sub h1, .interests .invitation-page .sub2 h1, .invitation-page .interests .sub2 h1 {
   font-weight: 800;
   font-size: 2.375rem;
 }
-.interests .sub p {
+.interests .sub p, .interests .invitation-page .sub2 p, .invitation-page .interests .sub2 p {
   font-size: 1rem;
   max-width: 60%;
 }
@@ -337,7 +337,7 @@
   padding: 3em 0em;
   background: url("../assets/invitation/backgroundgradient.png") fixed center no-repeat;
 }
-.invitation-page .sub {
+.invitation-page .sub, .invitation-page .sub2 {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -350,11 +350,11 @@
   border-radius: 25px;
   gap: 1.5em;
 }
-.invitation-page .sub h1 {
+.invitation-page .sub h1, .invitation-page .sub2 h1 {
   font-weight: 800;
   font-size: 2.375rem;
 }
-.invitation-page .sub .invite {
+.invitation-page .sub .invite, .invitation-page .sub2 .invite {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -366,7 +366,7 @@
   border-radius: 90px;
   gap: 1em;
 }
-.invitation-page .sub .invite a {
+.invitation-page .sub .invite a, .invitation-page .sub2 .invite a {
   text-decoration: none;
   color: #3377FF;
   padding: 0.75em 1em;
@@ -374,10 +374,10 @@
   border: 1px solid #3377FF;
   border-radius: 90px;
 }
-.invitation-page .sub b {
+.invitation-page .sub b, .invitation-page .sub2 b {
   margin-top: 2em;
 }
-.invitation-page .sub .link-container {
+.invitation-page .sub .link-container, .invitation-page .sub2 .link-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -386,7 +386,7 @@
   padding: 0em 2em;
   gap: 1em;
 }
-.invitation-page .sub .link-container input {
+.invitation-page .sub .link-container input, .invitation-page .sub2 .link-container input {
   width: 100%;
   background-color: inherit;
   height: 80px;
@@ -395,7 +395,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
 }
-.invitation-page .sub .link-container button {
+.invitation-page .sub .link-container button, .invitation-page .sub2 .link-container button {
   width: 140px;
   height: 40px;
   display: flex;
@@ -406,7 +406,7 @@
   border: none;
   border-radius: 6px;
 }
-.invitation-page .sub .link-container .tooltip {
+.invitation-page .sub .link-container .tooltip, .invitation-page .sub2 .link-container .tooltip {
   visibility: hidden;
   background-color: #000;
   color: #fff;
@@ -420,7 +420,24 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
-.invitation-page .sub .link-container .tooltip.show {
+.invitation-page .sub .link-container .tooltip.show, .invitation-page .sub2 .link-container .tooltip.show {
   visibility: visible;
   opacity: 1;
+}
+.invitation-page .sub2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.invitation-page .sub2 img {
+  max-width: 200px;
+}
+.invitation-page .sub2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.invitation-page .sub2 a:hover {
+  background-color: #3377FF;
+  color: #ffffff;
+  border: none;
 }/*# sourceMappingURL=App.css.map */
