@@ -327,4 +327,100 @@
 }
 .interests a button img {
   width: 12px;
+}
+
+.invitation-page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0em;
+  background: url("../assets/invitation/backgroundgradient.png") fixed center no-repeat;
+}
+.invitation-page .sub {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  padding: 3em 4em;
+  background: rgba(255, 255, 255, 0.27);
+  border: 1px solid #FFFFFF;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 25px;
+  gap: 1.5em;
+}
+.invitation-page .sub h1 {
+  font-weight: 800;
+  font-size: 2.375rem;
+}
+.invitation-page .sub .invite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: auto;
+  padding: 0.75em 1em;
+  background-color: #ffffff;
+  border-radius: 90px;
+  gap: 1em;
+}
+.invitation-page .sub .invite a {
+  text-decoration: none;
+  color: #3377FF;
+  padding: 0.75em 1em;
+  height: auto;
+  border: 1px solid #3377FF;
+  border-radius: 90px;
+}
+.invitation-page .sub b {
+  margin-top: 2em;
+}
+.invitation-page .sub .link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d4d8f8;
+  padding: 0em 2em;
+  gap: 1em;
+}
+.invitation-page .sub .link-container input {
+  width: 100%;
+  background-color: inherit;
+  height: 80px;
+  color: black;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.invitation-page .sub .link-container button {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #3377FF;
+  border: none;
+  border-radius: 6px;
+}
+.invitation-page .sub .link-container .tooltip {
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.invitation-page .sub .link-container .tooltip.show {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=App.css.map */

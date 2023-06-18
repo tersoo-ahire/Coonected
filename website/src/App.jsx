@@ -6,6 +6,7 @@ import Signup from "./pages/Sign_Up";
 import ForgetPassword from "./pages/ForgetPassword";
 import InterestSection from "./pages/Interests";
 import Invitation from "./pages/Invitation";
+import Success from "./pages/InvitationSuccess";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/forget-password" element={<ForgetPassword />} />
         <Route path="/sign-in/interests" element={<InterestSection />} />
         <Route path="/invitation" element={<Invitation />} />
+        <Route path="/invitation/success" element={<Success />} />
       </Routes>
     </>
   );
