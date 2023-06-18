@@ -17,7 +17,7 @@ export default function Signin() {
         const signInButton = document.getElementById("signin-btn");
         if (signInButton) {
             const handleClick = () => {
-                navigate("sign-in/interests");
+                navigate("/sign-in/interests");
             };
             signInButton.addEventListener("click", handleClick);
 

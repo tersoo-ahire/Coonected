@@ -36,7 +36,6 @@
 
 .sign-in {
   background-color: #E7F0FA;
-  min-height: 100vh;
   display: flex;
   flex-direction: row;
 }
@@ -55,6 +54,10 @@
   flex-direction: column;
   width: 100%;
   gap: 1em;
+}
+.sign-in .left .sub h1 {
+  font-weight: 800;
+  font-size: 2.375rem;
 }
 .sign-in .left .sub .social-container {
   display: flex;
@@ -141,6 +144,7 @@
   display: flex;
   flex-direction: column;
   width: 49%;
+  min-height: 100vh;
   padding: 0em 3em;
   position: relative;
 }
@@ -233,4 +237,94 @@
   bottom: 0rem;
   right: 14rem;
   z-index: 1;
+}
+
+.interests {
+  display: flex;
+  flex-direction: column;
+  background-color: #E7F0FA;
+  min-height: 100vh;
+  padding: 3em 4em;
+  gap: 3em;
+}
+.interests #logo {
+  width: 60px;
+}
+.interests .sub {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.interests .sub h1 {
+  font-weight: 800;
+  font-size: 2.375rem;
+}
+.interests .sub p {
+  font-size: 1rem;
+  max-width: 60%;
+}
+.interests .topics-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+.interests .topics-container .topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.interests .topics-container .topic .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #FE8400;
+}
+.interests .topics-container .topic .image-container img {
+  width: 100%;
+}
+.interests .topics-container .topic span {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.interests .topics-container .topic.selected .tick-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 7, 7, 0.5);
+  position: absolute;
+  border-radius: 50%;
+}
+.interests .topics-container .topic.selected .tick-container .tick-icon {
+  width: 60px;
+  height: 60px;
+}
+.interests a {
+  text-decoration: none;
+}
+.interests a button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  color: #3377FF;
+  font-weight: 600;
+  gap: 0.5em;
+  padding: 1em 0em;
+  width: 124px;
+  height: 52px;
+  border: 1.5px solid #3377FF;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.interests a button img {
+  width: 12px;
 }/*# sourceMappingURL=App.css.map */
