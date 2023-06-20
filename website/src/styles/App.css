@@ -440,4 +440,88 @@
   background-color: #3377FF;
   color: #ffffff;
   border: none;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  background-color: #E7F0FA;
+  width: 100%;
+  height: 100vh;
+}
+.home-page .left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 3em 2em 3em 3em;
+  border: 1px solid red;
+  gap: 3em;
+}
+.home-page .left .search-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.home-page .left .search-container img {
+  width: 60px;
+}
+.home-page .left .search-container .input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(220, 220, 220);
+  border-radius: 16px;
+  padding: 1em;
+  gap: 0.5em;
+}
+.home-page .left .search-container .input-container img {
+  width: 24px;
+}
+.home-page .left .search-container .input-container input {
+  background-color: inherit;
+  border: none;
+  height: 20px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+.home-page .left .group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.home-page .left .group-container h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #363636;
+  margin: 0;
+}
+.home-page .left .group-container .group-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  align-items: center;
+  border: 1px solid red;
+  margin: 0;
+}
+.home-page .left .group-container .group-list img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.home-page .left .group-container .group-list p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6C6C6C;
+  margin: 0;
+}
+.home-page .center {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.home-page .right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }/*# sourceMappingURL=App.css.map */
