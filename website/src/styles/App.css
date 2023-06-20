@@ -501,19 +501,16 @@
   flex-direction: row;
   gap: 1.5em;
   align-items: center;
-  border: 1px solid red;
-  margin: 0;
 }
 .home-page .left .group-container .group-list img {
   width: 30px;
-  height: 30px;
-  margin: 0;
+  padding-top: 0.2em;
 }
-.home-page .left .group-container .group-list p {
+.home-page .left .group-container .group-list a {
   font-size: 1rem;
   font-weight: 700;
   color: #6C6C6C;
-  margin: 0;
+  text-decoration: none;
 }
 .home-page .center {
   display: flex;
