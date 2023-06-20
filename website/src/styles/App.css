@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: row;
   gap: 1em;
-  width: 80%;
+  width: 85%;
 }
 .sign-in .left .sub .social-container .social-btn1, .sign-in .left .invitation-page .sub2 .social-container .social-btn1, .invitation-page .sign-in .left .sub2 .social-container .social-btn1, .sign-in .left .sub .social-container .social-btn2, .sign-in .left .invitation-page .sub2 .social-container .social-btn2, .invitation-page .sign-in .left .sub2 .social-container .social-btn2 {
   display: flex;
