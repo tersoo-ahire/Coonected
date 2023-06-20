@@ -452,7 +452,7 @@
 .home-page .left {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 27.5%;
   padding: 3em 2em 3em 2em;
   gap: 3em;
 }
@@ -585,11 +585,37 @@
 .home-page .center {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
   background-color: #ffffff;
+  align-items: center;
+}
+.home-page .center .navigation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 1.5em 1em 1em 1em;
+  background: rgba(51, 119, 255, 0.12);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 20px 20px;
+}
+.home-page .center .navigation-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+.home-page .center .navigation-container a img {
+  width: 30px;
+}
+.home-page .center .navigation-container a:hover {
+  background-color: #3377FF;
 }
 .home-page .right {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 27.5%;
 }/*# sourceMappingURL=App.css.map */

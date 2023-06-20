@@ -4,6 +4,7 @@ import Group from "../components/Group";
 import groupdata from "../data/group";
 import Connections from "../components/Coonections";
 import connectiondata from "../data/connections";
+import Navigation from "../components/Navigation";
 
 export default function Home(){
     const grouplist = groupdata.map(item => (<Group key={item.id} {...item} />))
@@ -26,7 +27,7 @@ export default function Home(){
                 </div>
             </div>
             <div className="center">
-Center
+                <Navigation/>
             </div>
             <div className="right">
 Right
