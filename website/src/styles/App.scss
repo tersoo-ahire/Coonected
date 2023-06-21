@@ -691,6 +691,7 @@
         width: 45%;
         background-color: $white;
         align-items: center;
+        gap: 2em;
         .navigation-container {
             display: flex;
             flex-direction: row;
@@ -714,6 +715,34 @@
             }
             a:hover {
                 background-color: $primaryblue;
+            }
+        }
+        .stories-container {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            .stories-sub-container {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5em;
+                overflow-x: scroll;
+                .story {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1em;
+                    text-decoration: none;
+                    img {
+                        max-width: 100px;
+                        border: 1.5px solid $orange;
+                        border-radius: 50%;
+                    }
+                    span {
+                        font-size: 0.8735rem;
+                        font-weight: 600;
+                        color: #1F1F1F;
+                    }
+                }
             }
         }
     }

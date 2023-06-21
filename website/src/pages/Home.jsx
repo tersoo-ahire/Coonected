@@ -5,10 +5,14 @@ import groupdata from "../data/group";
 import Connections from "../components/Coonections";
 import connectiondata from "../data/connections";
 import Navigation from "../components/Navigation";
+import Story from "../components/Stories";
+import storiesdata from "../data/stories";
+
 
 export default function Home(){
-    const grouplist = groupdata.map(item => (<Group key={item.id} {...item} />))
+    const grouplist = groupdata.map(item => (<Group key={item.id} {...item}/>))
     const connectionlist = connectiondata.map(item => (<Connections key={item.id} {...item}/>))
+    const storieslist = storiesdata.map(item => (<Story key={item.id} {...item}/>))
 
     return (
         // HOME PAGE SECTION
@@ -28,6 +32,11 @@ export default function Home(){
             </div>
             <div className="center">
                 <Navigation/>
+                <div className="stories-container">
+                    <div className="stories-sub-container">
+                        {storieslist}
+                    </div>
+                </div>
             </div>
             <div className="right">
 Right
