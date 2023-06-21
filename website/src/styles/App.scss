@@ -726,6 +726,10 @@
                 flex-direction: row;
                 gap: 1.5em;
                 overflow-x: scroll;
+                overflow-y: hidden;
+                scrollbar-width: none; /* Hide the scrollbar for modern browsers */
+                -ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer and Edge */
+                /* Add any other styles as needed */
                 .story {
                     display: flex;
                     flex-direction: column;
@@ -743,6 +747,9 @@
                         color: #1F1F1F;
                     }
                 }
+            }
+            .stories-sub-container::-webkit-scrollbar {
+                display: none; /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
             }
         }
     }
