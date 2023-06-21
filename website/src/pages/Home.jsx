@@ -8,12 +8,15 @@ import Navigation from "../components/Navigation";
 import Story from "../components/Stories";
 import storiesdata from "../data/stories";
 import Post from "../components/Post";
+import Feed from "../components/Feed";
+import feeddata from "../data/feed";
 
 
 export default function Home(){
     const grouplist = groupdata.map(item => (<Group key={item.id} {...item}/>))
     const connectionlist = connectiondata.map(item => (<Connections key={item.id} {...item}/>))
     const storieslist = storiesdata.map(item => (<Story key={item.id} {...item}/>))
+    const personalfeed = feeddata.map(item => (<Feed key={item.id} {...item}/>))
 
     return (
         // HOME PAGE SECTION
@@ -39,6 +42,7 @@ export default function Home(){
                     </div>
                 </div>
                 <Post/>
+                {personalfeed}
             </div>
             <div className="right">
 Right

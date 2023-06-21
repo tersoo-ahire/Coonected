@@ -821,6 +821,101 @@
                 }
             }
         }
+        // FEED COMPONENT
+        .feed-container {
+            @extend .post-container;
+            gap: 1.5em;
+            .top {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                gap: 1em;
+                .image-container {
+                    display: flex;
+                    width: 15%;
+                }
+                .details-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 75%;
+                    .username {
+                        font-size: 1.15rem;
+                        color: #3F3F3F;
+                        font-weight: 700;
+                    }
+                    .lastposted {
+                        font-size: 0.75rem;
+                        color: #3f3f3f93;
+                        font-weight: 500;
+                    }
+                }
+                .settings-container {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 10%;
+                }
+            }
+            .center {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                width: 100%;
+                p {
+                    width: 100%;
+                    margin: 0;
+                }
+                .images-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    gap: 0.5em;
+                    img {
+                        max-width: 49%;
+                        border-radius: 16px;
+                    }
+                    .show {
+                        display: block;
+                    }
+                    .hide {
+                        display: none;
+                    }
+                }
+            }
+            .bottom {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .interaction-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0em 1.25em;
+                    width: 170px;
+                    height: 55px;  
+                    background: $primaryblue;
+                    border-radius: 29px;
+                    color: white;
+                    font-size: 0.875rem;
+                    .value {
+                        background: #064CB7;
+                        border-radius: 30px;
+                        padding: 0.5em;
+                    }
+                }
+                .comments-share-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    gap: 1em;
+                    font-size: 0.875rem;
+                    color: $darkgrey;
+                }
+
+            }
+        }
 
     }
 

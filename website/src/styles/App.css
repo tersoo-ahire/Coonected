@@ -654,7 +654,7 @@
 .home-page .center .stories-container .stories-sub-container::-webkit-scrollbar {
   display: none; /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
 }
-.home-page .center .post-container {
+.home-page .center .post-container, .home-page .center .feed-container {
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -664,16 +664,16 @@
   border-radius: 16px;
   padding: 1.5em;
 }
-.home-page .center .post-container .top {
+.home-page .center .post-container .top, .home-page .center .feed-container .top {
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 2.5em;
 }
-.home-page .center .post-container .top img {
+.home-page .center .post-container .top img, .home-page .center .feed-container .top img {
   max-width: 50px;
 }
-.home-page .center .post-container .top input {
+.home-page .center .post-container .top input, .home-page .center .feed-container .top input {
   width: 100%;
   padding: 0em 1.5em;
   background-color: rgba(220, 220, 220, 0.4901960784);
@@ -682,14 +682,14 @@
   border-radius: 16px;
   color: #363636;
 }
-.home-page .center .post-container .bottom {
+.home-page .center .post-container .bottom, .home-page .center .feed-container .bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.home-page .center .post-container .bottom .media-container {
+.home-page .center .post-container .bottom .media-container, .home-page .center .feed-container .bottom .media-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -699,10 +699,10 @@
   color: #1F1F1F;
   font-weight: 600;
 }
-.home-page .center .post-container .bottom .media-container img {
+.home-page .center .post-container .bottom .media-container img, .home-page .center .feed-container .bottom .media-container img {
   height: 20px;
 }
-.home-page .center .post-container .bottom button {
+.home-page .center .post-container .bottom button, .home-page .center .feed-container .bottom button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -713,8 +713,100 @@
   outline: none;
   border-radius: 8px;
 }
-.home-page .center .post-container .bottom button:hover {
+.home-page .center .post-container .bottom button:hover, .home-page .center .feed-container .bottom button:hover {
   background-color: #1e69ff;
+}
+.home-page .center .feed-container {
+  gap: 1.5em;
+}
+.home-page .center .feed-container .top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1em;
+}
+.home-page .center .feed-container .top .image-container {
+  display: flex;
+  width: 15%;
+}
+.home-page .center .feed-container .top .details-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.home-page .center .feed-container .top .details-container .username {
+  font-size: 1.15rem;
+  color: #3F3F3F;
+  font-weight: 700;
+}
+.home-page .center .feed-container .top .details-container .lastposted {
+  font-size: 0.75rem;
+  color: rgba(63, 63, 63, 0.5764705882);
+  font-weight: 500;
+}
+.home-page .center .feed-container .top .settings-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+}
+.home-page .center .feed-container .center {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+.home-page .center .feed-container .center p {
+  width: 100%;
+  margin: 0;
+}
+.home-page .center .feed-container .center .images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5em;
+}
+.home-page .center .feed-container .center .images-container img {
+  max-width: 49%;
+  border-radius: 16px;
+}
+.home-page .center .feed-container .center .images-container .show {
+  display: block;
+}
+.home-page .center .feed-container .center .images-container .hide {
+  display: none;
+}
+.home-page .center .feed-container .bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.home-page .center .feed-container .bottom .interaction-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1.25em;
+  width: 170px;
+  height: 55px;
+  background: #3377FF;
+  border-radius: 29px;
+  color: white;
+  font-size: 0.875rem;
+}
+.home-page .center .feed-container .bottom .interaction-container .value {
+  background: #064CB7;
+  border-radius: 30px;
+  padding: 0.5em;
+}
+.home-page .center .feed-container .bottom .comments-share-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1em;
+  font-size: 0.875rem;
+  color: #363636;
 }
 .home-page .right {
   display: flex;
