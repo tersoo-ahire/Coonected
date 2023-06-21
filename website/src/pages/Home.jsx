@@ -7,6 +7,7 @@ import connectiondata from "../data/connections";
 import Navigation from "../components/Navigation";
 import Story from "../components/Stories";
 import storiesdata from "../data/stories";
+import Post from "../components/Post";
 
 
 export default function Home(){
@@ -37,6 +38,7 @@ export default function Home(){
                         {storieslist}
                     </div>
                 </div>
+                <Post/>
             </div>
             <div className="right">
 Right
