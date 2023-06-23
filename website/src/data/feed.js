@@ -18,4 +18,17 @@ export default [
         comment_count: 68,
         share_count: 50,
     },
+    {
+        id: 2,
+        profile_picture: paul,
+        username: "John Clark",
+        lastposted: "20h",
+        visibility: "Public",
+        caption: "Who saved the day Thanos or Spider Man?",
+        media1: image1,
+        media2: image2,
+        media3: null,
+        comment_count: 68,
+        share_count: 50,
+    },
 ]

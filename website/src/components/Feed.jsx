@@ -7,7 +7,7 @@ export default function Feed(props){
 
     return (
         <div className="feed-container">
-            <div className="top">
+            <div className="top-container">
                 <div className="image-container">
                     <img src={props.profile_picture} alt="Post" />
                 </div>
@@ -21,7 +21,7 @@ export default function Feed(props){
                     </Link>
                 </div>
             </div>
-            <div className="center">
+            <div className="center-container">
                 <p>{props.caption}</p>
                 <div className="images-container">
                     <img className={(props.media1) === null ? "hide" : "show"} src={props.media1} alt="Media" />
@@ -39,7 +39,7 @@ export default function Feed(props){
                     </div>
                 </div>
             </div>
-            <div className="bottom">
+            <div className="bottom-container">
 
             </div>
         </div>

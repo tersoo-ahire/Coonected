@@ -825,7 +825,7 @@
         .feed-container {
             @extend .post-container;
             gap: 1.5em;
-            .top {
+            .top-container {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
@@ -855,7 +855,7 @@
                     width: 10%;
                 }
             }
-            .center {
+            .center-container {
                 display: flex;
                 flex-direction: column;
                 gap: 1em;
@@ -881,39 +881,39 @@
                         display: none;
                     }
                 }
-            }
-            .bottom {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                .interaction-container {
+                .bottom {
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 0em 1.25em;
-                    width: 170px;
-                    height: 55px;  
-                    background: $primaryblue;
-                    border-radius: 29px;
-                    color: white;
-                    font-size: 0.875rem;
-                    .value {
-                        background: #064CB7;
-                        border-radius: 30px;
-                        padding: 0.5em;
+                    width: 100%;
+                    .interaction-container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0em 1.25em;
+                        width: 170px;
+                        height: 55px;  
+                        background: $primaryblue;
+                        border-radius: 29px;
+                        color: white;
+                        font-size: 0.875rem;
+                        .value {
+                            background: #064CB7;
+                            border-radius: 30px;
+                            padding: 0.5em;
+                        }
                     }
+                    .comments-share-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        gap: 1em;
+                        font-size: 0.875rem;
+                        color: $darkgrey;
+                    }
+    
                 }
-                .comments-share-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    gap: 1em;
-                    font-size: 0.875rem;
-                    color: $darkgrey;
-                }
-
             }
         }
 
