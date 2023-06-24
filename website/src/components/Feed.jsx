@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import settings from "../assets/feed/settings.svg";
+import like from "../assets/feed/like.svg";
+import comment from "../assets/feed/comment.svg";
+import share from "../assets/feed/share.svg";
+
 
 export default function Feed(props){
     const totalInteractions = props.comment_count + props.share_count;
@@ -24,23 +28,45 @@ export default function Feed(props){
             <div className="center-container">
                 <p>{props.caption}</p>
                 <div className="images-container">
-                    <img className={(props.media1) === null ? "hide" : "show"} src={props.media1} alt="Media" />
-                    <img className={(props.media2) === null ? "hide" : "show"} src={props.media2} alt="Media" />
-                    <img className={(props.media3) === null ? "hide" : "show"} src={props.media3} alt="Media" />
+                    <img className={(props.media1) === null ? "hide" : "show"} 
+                        src={props.media1} alt="Media" 
+                    />
+                    <img className={(props.media2) === null ? "hide" : "show"} 
+                        src={props.media2} alt="Media" 
+                    />
+                    <img className={(props.media3) === null ? "hide" : "show"} 
+                        src={props.media3} alt="Media" 
+                    />
                 </div>
                 <div className="bottom">
-                    <div className="interaction-container">
+                    <Link className="interaction-container">
                         <span className="value">{totalInteractions}</span>
                         <span>Participants</span>
-                    </div>
+                    </Link>
                     <div className="comments-share-container">
-                        <span>{props.comment_count} comments</span>
-                        <span>{props.share_count} shares</span>
+                        <Link>{props.comment_count} comments</Link>
+                        <Link>{props.share_count} shares</Link>
                     </div>
                 </div>
             </div>
             <div className="bottom-container">
+                <div className="top">
+                    <Link className="icon-container">
+                        <img src={like} alt="Like" />
+                        <span>Like</span>
+                    </Link>
+                    <Link className="icon-container">
+                        <img src={comment} alt="Comments" />
+                        <span>Comments</span>
+                    </Link>
+                    <Link className="icon-container">
+                        <img src={share} alt="Share" />
+                        <span>Share</span>
+                    </Link>
+                </div>
+                <div className="bottom">
 
+                </div>
             </div>
         </div>
     )
