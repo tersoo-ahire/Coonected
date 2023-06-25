@@ -10,6 +10,7 @@ import storiesdata from "../data/stories";
 import Post from "../components/Post";
 import Feed from "../components/Feed";
 import feeddata from "../data/feed";
+import UserProfile from "../components/Userprofile";
 
 
 export default function Home(){
@@ -45,7 +46,7 @@ export default function Home(){
                 {personalfeed}
             </div>
             <div className="right">
-Right
+                <UserProfile/>
             </div>
         </section>
     )

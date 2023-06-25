@@ -519,14 +519,17 @@
     flex-direction: row;
     background-color: $backgroundcolor;
     width: 100%;
-    min-height: 100vh;
-
+    max-height: 100vh;
+    
     .left {
         display: flex;
         flex-direction: column;
         width: 27.5%;
         padding: 3em 2em 3em 2em;
         gap: 3em;
+        background-color: $backgroundcolor;
+        max-height: 100vh;
+        overflow: hidden;
 
         // SEARCH COMPONENT
         .search-container {
@@ -682,17 +685,21 @@
                 background-color: $primaryblue;
             }
         }
-
-
     }
 
     .center {
         display: flex;
         flex-direction: column;
         width: 45%;
+        max-height: 100vh;
+        padding-bottom: 2em;
         background-color: #ffffffa8;
         align-items: center;
         gap: 2em;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-width: none; /* Hide the scrollbar for modern browsers */
+        -ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer and Edge */
         // NAVIGATION COMPONENT
         .navigation-container {
             display: flex;
@@ -1004,10 +1011,16 @@
         }
 
     }
+    .center::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+    }
 
     .right {
         display: flex;
         flex-direction: column;
         width: 27.5%;
+        padding: 3em 2em 3em 2em;
+        background-color: $backgroundcolor;
+        max-height: 100vh;
     }
 }

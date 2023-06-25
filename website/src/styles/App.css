@@ -447,7 +447,7 @@
   flex-direction: row;
   background-color: #E7F0FA;
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 .home-page .left {
   display: flex;
@@ -455,6 +455,9 @@
   width: 27.5%;
   padding: 3em 2em 3em 2em;
   gap: 3em;
+  background-color: #E7F0FA;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .home-page .left .search-container {
   display: flex;
@@ -587,9 +590,15 @@
   display: flex;
   flex-direction: column;
   width: 45%;
+  max-height: 100vh;
+  padding-bottom: 2em;
   background-color: rgba(255, 255, 255, 0.6588235294);
   align-items: center;
   gap: 2em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Hide the scrollbar for modern browsers */
+  -ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer and Edge */
 }
 .home-page .center .navigation-container {
   display: flex;
@@ -892,8 +901,14 @@
 .home-page .center .feed-container .bottom-container .bottom-area .right-con img {
   width: 18px;
 }
+.home-page .center::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+}
 .home-page .right {
   display: flex;
   flex-direction: column;
   width: 27.5%;
+  padding: 3em 2em 3em 2em;
+  background-color: #E7F0FA;
+  max-height: 100vh;
 }/*# sourceMappingURL=App.css.map */
