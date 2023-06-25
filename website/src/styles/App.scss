@@ -1020,6 +1020,7 @@
         flex-direction: column;
         width: 27.5%;
         padding: 3em 2em 3em 2em;
+        gap: 3em;
         background-color: $backgroundcolor;
         max-height: 100vh;
         .user-profile-container {
@@ -1027,6 +1028,82 @@
             align-items: center;
             justify-content: flex-end;
             gap: 1em;
+            span {
+                color: #3F3F3F;
+                font-weight: 700;
+            }
+        }
+        .suggestion-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            .top-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h2 {
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: #363636;
+                    margin: 0;
+                }
+                a {
+                    color: $primaryblue;
+                    padding: 0.5em;
+                    font-size: 0.875rem;
+                    border-radius: 5px;
+                    border: 1px solid $primaryblue;
+                    margin: 0;
+                    text-decoration: none;
+                }
+            }
+            .center-area {
+                display: flex;
+                padding: 1em 0em;
+                background-color: inherit;
+                gap: 1em;
+                border-top: 1px solid #d2d2d276;
+                align-items: center;
+                img {
+                    max-width: 100px;
+                }
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+                    .one {
+                        color: #3F3F3F;
+                        font-size: 1.15em;
+                        font-weight: 700;
+                    }
+                    .two {
+                        font-size: 0.875rem;
+                        color: #3f3f3f93;
+                        font-weight: 500;
+                    }
+                }
+                
+            }
+        }
+        .bottom-area {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            .btn-1 {
+                background-color: inherit;
+                border-radius: 5px;
+                border: 0.5px solid #8E949C;
+                padding: 0.75em 1.5em;
+                color: #8E949C;
+                font-size: 1rem;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .btn-2 {
+                @extend .btn-1;
+                color: $white;
+                background-color: $primaryblue;
+            }
         }
     }
 }

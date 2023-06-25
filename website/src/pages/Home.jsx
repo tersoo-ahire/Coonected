@@ -11,6 +11,7 @@ import Post from "../components/Post";
 import Feed from "../components/Feed";
 import feeddata from "../data/feed";
 import UserProfile from "../components/Userprofile";
+import Suggestion from "../components/Suggestion";
 
 
 export default function Home(){
@@ -25,11 +26,11 @@ export default function Home(){
             <div className="left">
                 <Search/>
                 <div className="group-container">
-                    <h2>YOUR GROUP</h2>
+                    <h2>Groups</h2>
                     {grouplist}
                 </div>
                 <div className="connection-container">
-                    <h2>COONECTIONS</h2>
+                    <h2>Coonections</h2>
                     <div className="connection-sub-container">
                         {connectionlist}
                     </div>
@@ -47,6 +48,7 @@ export default function Home(){
             </div>
             <div className="right">
                 <UserProfile/>
+                <Suggestion/>
             </div>
         </section>
     )
