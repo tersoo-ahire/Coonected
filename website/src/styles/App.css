@@ -911,4 +911,10 @@
   padding: 3em 2em 3em 2em;
   background-color: #E7F0FA;
   max-height: 100vh;
+}
+.home-page .right .user-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
 }/*# sourceMappingURL=App.css.map */

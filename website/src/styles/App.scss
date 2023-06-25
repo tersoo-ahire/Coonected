@@ -1022,5 +1022,11 @@
         padding: 3em 2em 3em 2em;
         background-color: $backgroundcolor;
         max-height: 100vh;
+        .user-profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1em;
+        }
     }
 }
