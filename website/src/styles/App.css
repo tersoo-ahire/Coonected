@@ -908,10 +908,11 @@
   display: flex;
   flex-direction: column;
   width: 27.5%;
-  padding: 3em 2em 3em 2em;
+  padding: 3em 2em 1em 2em;
   gap: 3em;
   background-color: #E7F0FA;
   max-height: 100vh;
+  overflow-y: scroll;
 }
 .home-page .right .user-profile-container {
   display: flex;
@@ -974,12 +975,12 @@
   color: rgba(63, 63, 63, 0.5764705882);
   font-weight: 500;
 }
-.home-page .right .bottom-area {
+.home-page .right .suggestion-container .bottom-area {
   display: flex;
   flex-direction: row;
   gap: 1em;
 }
-.home-page .right .bottom-area .btn-1, .home-page .right .bottom-area .btn-2 {
+.home-page .right .suggestion-container .bottom-area .btn-1, .home-page .right .suggestion-container .bottom-area .activity-component .sub-component .like-activities-container .follow .sub .buttons-container .btn-2, .activity-component .sub-component .like-activities-container .follow .sub .buttons-container .home-page .right .suggestion-container .bottom-area .btn-2, .home-page .right .suggestion-container .bottom-area .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container .btn-2, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container .home-page .right .suggestion-container .bottom-area .btn-2, .home-page .right .suggestion-container .bottom-area .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container .btn-2, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container .home-page .right .suggestion-container .bottom-area .btn-2, .home-page .right .suggestion-container .bottom-area .btn-2 {
   background-color: inherit;
   border-radius: 5px;
   border: 0.5px solid #8E949C;
@@ -989,7 +990,79 @@
   font-weight: 600;
   text-decoration: none;
 }
-.home-page .right .bottom-area .btn-2 {
+.home-page .right .suggestion-container .bottom-area .btn-2 {
+  color: #ffffff;
+  background-color: #3377FF;
+}
+
+.activity-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 16px;
+  padding: 1.5em 1.25em;
+  background: #FFF;
+  box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.07);
+  gap: 1em;
+}
+.activity-component h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #363636;
+  margin: 0;
+}
+.activity-component .sub-component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5em;
+}
+.activity-component .sub-component .like-activities-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: #3F3F3F;
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+.activity-component .sub-component .like-activities-container img {
+  width: 35px;
+  height: 35px;
+}
+.activity-component .sub-component .like-activities-container span {
+  font-weight: 700;
+}
+.activity-component .sub-component .like-activities-container .likes {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.activity-component .sub-component .like-activities-container .follow {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.activity-component .sub-component .like-activities-container .follow .sub, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.activity-component .sub-component .like-activities-container .follow .sub .buttons-container, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container {
+  display: flex;
+  gap: 0.5em;
+}
+.activity-component .sub-component .like-activities-container .follow .sub .buttons-container .btn-1, .activity-component .sub-component .like-activities-container .follow .sub .buttons-container .btn-2, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container .btn-1, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container .btn-2, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container .btn-1, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container .btn-2 {
+  width: 50%;
+  height: 30px;
+  background-color: inherit;
+  border-radius: 5px;
+  border: 0.5px solid #8E949C;
+  color: #8E949C;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.activity-component .sub-component .like-activities-container .follow .sub .buttons-container .btn-2, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container .btn-2, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container .btn-2 {
   color: #ffffff;
   background-color: #3377FF;
 }/*# sourceMappingURL=App.css.map */

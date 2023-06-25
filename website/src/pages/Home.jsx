@@ -12,6 +12,7 @@ import Feed from "../components/Feed";
 import feeddata from "../data/feed";
 import UserProfile from "../components/Userprofile";
 import Suggestion from "../components/Suggestion";
+import Activities from "../components/Activities";
 
 
 export default function Home(){
@@ -49,6 +50,12 @@ export default function Home(){
             <div className="right">
                 <UserProfile/>
                 <Suggestion/>
+                <div className="activity-component">
+                <h2>Latest Activity</h2>
+                    <div className="sub-component">
+                        <Activities/>
+                    </div>
+                </div>
             </div>
         </section>
     )
