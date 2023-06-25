@@ -4,6 +4,11 @@ import settings from "../assets/feed/settings.svg";
 import like from "../assets/feed/like.svg";
 import comment from "../assets/feed/comment.svg";
 import share from "../assets/feed/share.svg";
+import paul from "../assets/group/paul.png";
+import send from "../assets/feed/send.svg";
+import gif from "../assets/feed/gif.svg";
+import media from "../assets/post/photo.svg";
+import feeling from "../assets/post/feeling.svg";
 
 
 export default function Feed(props){
@@ -50,7 +55,7 @@ export default function Feed(props){
                 </div>
             </div>
             <div className="bottom-container">
-                <div className="top">
+                <div className="top-area">
                     <Link className="icon-container">
                         <img src={like} alt="Like" />
                         <span>Like</span>
@@ -64,8 +69,21 @@ export default function Feed(props){
                         <span>Share</span>
                     </Link>
                 </div>
-                <div className="bottom">
-
+                <div className="bottom-area">
+                    <div className="left-con">
+                        <img src={paul} alt="Paul" />
+                    </div>
+                    <div className="center-con">
+                        <input type="text" placeholder="Write a comment" />
+                        <div className="image-container">
+                            <img src={gif} alt="GIF" />
+                            <img src={media} alt="Media" />
+                            <img src={feeling} alt="Feeling" />
+                        </div>
+                    </div>
+                    <div className="right-con">
+                        <img src={send} alt="Send Icon" />
+                    </div>
                 </div>
             </div>
         </div>
