@@ -4,15 +4,32 @@ import settings from "../assets/feed/settings.svg";
 import like from "../assets/feed/like.svg";
 import comment from "../assets/feed/comment.svg";
 import share from "../assets/feed/share.svg";
-import paul from "../assets/group/paul.png";
-import send from "../assets/feed/send.svg";
-import gif from "../assets/feed/gif.svg";
-import media from "../assets/post/photo.svg";
-import feeling from "../assets/post/feeling.svg";
+import CommentList from "./CommentList";
+import commentdata from "../data/commentdata.js";
+import CommentBottom from "./CommentBottom";
 
 
 export default function Feed(props){
     const totalInteractions = props.comment_count + props.share_count;
+    const commentlist = commentdata.map(item => <CommentList key={item.id} {...item} />)
+
+    const [isModalOpen, setIsModalOpen] = React.useState(false);
+    const modalRef = React.useRef(null);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    }
+
+    const handleModalClick = (e) => {
+        if (modalRef.current && !modalRef.current.contains(e.target)) {
+            closeModal();
+        }
+    };
+      
 
     return (
         <div className="feed-container">
@@ -49,43 +66,34 @@ export default function Feed(props){
                         <span>Participants</span>
                     </Link>
                     <div className="comments-share-container">
-                        <Link>{props.comment_count} comments</Link>
+                        <Link onClick={openModal}>{props.comment_count} comments</Link>
                         <Link>{props.share_count} shares</Link>
                     </div>
                 </div>
             </div>
             <div className="bottom-container">
                 <div className="top-area">
-                    <Link className="icon-container">
+                    <div className="icon-container">
                         <img src={like} alt="Like" />
                         <span>Like</span>
-                    </Link>
-                    <Link className="icon-container">
+                    </div>
+                    <div className="icon-container" onClick={openModal}>
                         <img src={comment} alt="Comments" />
                         <span>Comments</span>
-                    </Link>
-                    <Link className="icon-container">
+                    </div>
+                    <div className="icon-container">
                         <img src={share} alt="Share" />
                         <span>Share</span>
-                    </Link>
-                </div>
-                <div className="bottom-area">
-                    <div className="left-con">
-                        <img src={paul} alt="Paul" />
-                    </div>
-                    <div className="center-con">
-                        <input type="text" placeholder="Write a comment" />
-                        <div className="image-container">
-                            <img src={gif} alt="GIF" />
-                            <img src={media} alt="Media" />
-                            <img src={feeling} alt="Feeling" />
-                        </div>
-                    </div>
-                    <div className="right-con">
-                        <img src={send} alt="Send Icon" />
                     </div>
                 </div>
+                <CommentBottom/>
             </div>
+            {isModalOpen &&         
+            <div className="modal-container" onClick={handleModalClick}>
+                <div className="modal-content-sub" ref={modalRef}>
+                    {commentlist}
+                </div>
+            </div>}
         </div>
     )
 }

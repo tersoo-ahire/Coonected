@@ -533,11 +533,14 @@
   flex-direction: column;
   gap: 1.5em;
   max-height: 400px;
-  overflow-y: hidden; /* Set overflow-y to hidden to hide the scrollbar by default */
-  transition: overflow-y 200s ease; /* Add a transition for a smooth effect */
+  overflow-y: hidden;
+  /* Set overflow-y to hidden to hide the scrollbar by default */
+  transition: overflow-y 200s ease;
+  /* Add a transition for a smooth effect */
 }
 .home-page .left .connection-container .connection-sub-container:hover {
-  overflow-y: auto; /* Show the scrollbar on hover */
+  overflow-y: auto;
+  /* Show the scrollbar on hover */
 }
 .home-page .left .connection-container .connection-sub-container .connection-list {
   display: flex;
@@ -577,7 +580,8 @@
   transition: opacity 0.3s ease;
 }
 .home-page .left .connection-container .connection-sub-container:hover::-webkit-scrollbar {
-  opacity: 1; /* Show the scrollbar on hover */
+  opacity: 1;
+  /* Show the scrollbar on hover */
 }
 .home-page .left .connection-container .connection-sub-container::-webkit-scrollbar-thumb {
   background-color: #dcdcdc;
@@ -597,8 +601,10 @@
   gap: 2em;
   overflow-x: hidden;
   overflow-y: scroll;
-  scrollbar-width: none; /* Hide the scrollbar for modern browsers */
-  -ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* Hide the scrollbar for modern browsers */
+  -ms-overflow-style: none;
+  /* Hide the scrollbar for Internet Explorer and Edge */
 }
 .home-page .center .navigation-container {
   display: flex;
@@ -640,8 +646,10 @@
   gap: 1.3em;
   overflow-x: scroll;
   overflow-y: hidden;
-  scrollbar-width: none; /* Hide the scrollbar for modern browsers */
-  -ms-overflow-style: none; /* Hide the scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* Hide the scrollbar for modern browsers */
+  -ms-overflow-style: none;
+  /* Hide the scrollbar for Internet Explorer and Edge */
 }
 .home-page .center .stories-container .stories-sub-container .story {
   display: flex;
@@ -661,7 +669,8 @@
   color: #1F1F1F;
 }
 .home-page .center .stories-container .stories-sub-container::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+  display: none;
+  /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
 }
 .home-page .center .post-container, .home-page .center .feed-container {
   display: flex;
@@ -838,6 +847,7 @@
   gap: 1em;
   justify-content: space-between;
   text-decoration: none;
+  cursor: pointer;
 }
 .home-page .center .feed-container .bottom-container .top-area .icon-container img {
   width: 20px;
@@ -902,7 +912,8 @@
   width: 18px;
 }
 .home-page .center::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
+  display: none;
+  /* Hide the scrollbar for WebKit-based browsers (Chrome, Safari, etc.) */
 }
 .home-page .right {
   display: flex;
@@ -1065,4 +1076,71 @@
 .activity-component .sub-component .like-activities-container .follow .sub .buttons-container .btn-2, .activity-component .sub-component .like-activities-container .follow .invitation-page .sub2 .buttons-container .btn-2, .invitation-page .activity-component .sub-component .like-activities-container .follow .sub2 .buttons-container .btn-2 {
   color: #ffffff;
   background-color: #3377FF;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Darker background */
+  z-index: 9999;
+  /* Reduce the scroll bar size */
+  /* Remove the scroll bar arrow */
+}
+.modal-container .modal-content-sub {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 50%;
+  background-color: #FFFFFF;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+.modal-container .modal-content-sub .modal-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2em;
+  margin-bottom: 1.5em;
+}
+.modal-container .modal-content-sub .modal-content img {
+  width: 40px;
+  height: 40px;
+}
+.modal-container .modal-content-sub .modal-content .right-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.modal-container .modal-content-sub .modal-content .right-modal-content .comment {
+  padding: 1em 1.5em;
+  color: #000000;
+  background-color: rgba(220, 220, 220, 0.4901960784);
+  border-radius: 10px;
+}
+.modal-container .modal-content-sub .modal-content .right-modal-content .actions {
+  display: flex;
+  gap: 2em;
+}
+.modal-container .modal-content-sub::-webkit-scrollbar {
+  width: 8px;
+  /* Set the width of the scroll bar */
+}
+.modal-container .modal-content-sub::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Set the color of the scroll bar thumb */
+  border-radius: 4px;
+  /* Set the border radius of the scroll bar thumb */
+}
+.modal-container .modal-content-sub::-webkit-scrollbar-button {
+  display: none;
+  /* Hide the scroll bar arrow */
 }/*# sourceMappingURL=App.css.map */
