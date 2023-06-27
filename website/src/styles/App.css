@@ -37,14 +37,15 @@
 .sign-in {
   background-color: #E7F0FA;
   display: flex;
+  min-height: 100vh;
   flex-direction: row;
 }
 .sign-in .left {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 3em 4em;
-  gap: 3em;
+  padding: 2em 4em;
+  gap: 2em;
 }
 .sign-in .left img {
   width: 60px;
@@ -53,11 +54,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 1em;
+  gap: 0.65em;
 }
 .sign-in .left .sub h1, .sign-in .left .invitation-page .sub2 h1, .invitation-page .sign-in .left .sub2 h1 {
   font-weight: 800;
   font-size: 2.375rem;
+  margin: 0;
 }
 .sign-in .left .sub .social-container, .sign-in .left .invitation-page .sub2 .social-container, .invitation-page .sign-in .left .sub2 .social-container {
   display: flex;
@@ -143,15 +145,14 @@
 .sign-in .right {
   display: flex;
   flex-direction: column;
-  width: 49%;
-  min-height: 100vh;
+  width: 50%;
   padding: 0em 3em;
   position: relative;
 }
 .sign-in .right .right-sub {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 98%;
   height: 100%;
   background-color: #3377FF;
   transform: skewX(-10deg);
