@@ -6,6 +6,7 @@ import Connections from "../components/Coonections";
 import connectiondata from "../data/connections";
 import Navigation from "../components/Navigation";
 import UserProfile from "../components/Userprofile";
+import ProfileHeader from "../components/ProfileHeader";
 
 
 export default function Profile(){
@@ -34,6 +35,7 @@ export default function Profile(){
                         <UserProfile/>
                     </div>
                     <div className="second-area">
+                        <ProfileHeader/>
         
                     </div>
                 </div>

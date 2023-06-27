@@ -1381,7 +1381,6 @@
             flex-direction: column;
             width: 100%;
             gap: 2em;
-            border: $testborder;
 
             .first-area {
                 display: flex;
@@ -1400,7 +1399,94 @@
             display: flex;
             flex-direction: column;
             width: 100%;
+        }
+    }
+}
+
+.profile-header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .cover-container {
+        img {
+            width: 100%;
+        }
+    }
+
+    .bottom-area {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        border: $testborder;
+
+        .friend-count-container {
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+            gap: 0.5em;
             border: $testborder;
+
+            p {
+                color: #4C4C54;
+                font-size: 1.15rem;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            .image-mask-container {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                img {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    margin-left: -0.5rem;
+                }
+
+                #pos1 {
+                    margin-left: 0em;
+                }
+            }
+        }
+
+        .buttons-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            gap: 1em;
+
+            .submit3 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 1em 0em;
+                width: 100px;
+                height: auto;
+                background: $primaryblue;
+                border: none;
+                border-radius: 7px;
+                font-weight: bold;
+            
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .submit3-alt {
+                @extend .submit3;
+                background-color: inherit;
+                border: 1px solid #282828;
+
+                a {
+                    color: #282828;
+                }
+            }
         }
     }
 }
