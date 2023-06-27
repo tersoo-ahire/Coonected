@@ -4,6 +4,8 @@ import Group from "../components/Group";
 import groupdata from "../data/group";
 import Connections from "../components/Coonections";
 import connectiondata from "../data/connections";
+import Navigation from "../components/Navigation";
+import UserProfile from "../components/Userprofile";
 
 
 export default function Profile(){
@@ -26,7 +28,18 @@ export default function Profile(){
                 </div>
             </div>
             <div className="right-section">
-
+                <div className="top-container">
+                    <div className="first-area">
+                        <Navigation/>
+                        <UserProfile/>
+                    </div>
+                    <div className="second-area">
+        
+                    </div>
+                </div>
+                <div className="bottom-container">
+                    Bottom container
+                </div>
             </div>
         </section>
     )
