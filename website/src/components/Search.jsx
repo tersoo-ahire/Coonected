@@ -6,7 +6,7 @@ import magnifyingglass from "../assets/magnifyingglass.svg";
 export default function Search(){
     return (
         <div className="search-container">
-            <Link to="/">
+            <Link to="/home">
                 <img src={logo} alt="Coonected Logo" />
             </Link>
             <div className="input-container">

@@ -1,9 +1,33 @@
 import React from "react";
+import Search from "../components/Search";
+import Group from "../components/Group";
+import groupdata from "../data/group";
+import Connections from "../components/Coonections";
+import connectiondata from "../data/connections";
+
 
 export default function Profile(){
+    const grouplist = groupdata.map(item => (<Group key={item.id} {...item}/>))
+    const connectionlist = connectiondata.map(item => (<Connections key={item.id} {...item}/>))
     return (
-        <>
-            Profile
-        </>
+        // PROFILE PAGE SECTION
+        <section className="profile-page">
+            <div className="left-section">
+                <Search/>
+                <div className="group-container">
+                    <h2>Groups</h2>
+                    {grouplist}
+                </div>
+                <div className="connection-container">
+                    <h2>Coonections</h2>
+                    <div className="connection-sub-container">
+                        {connectionlist}
+                    </div>
+                </div>
+            </div>
+            <div className="right-section">
+
+            </div>
+        </section>
     )
 }
