@@ -1190,6 +1190,7 @@
 .profile-page .right-section .top-container .second-area {
   display: flex;
   flex-direction: column;
+  gap: 2em;
 }
 .profile-page .right-section .bottom-container {
   display: flex;
@@ -1343,4 +1344,22 @@
 }
 .profile-header-container .bottom-area .buttons-container .submit3-alt a {
   color: #282828;
+}
+
+.profile-links-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  padding: 1em 0em;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.profile-links-container a {
+  padding: 0.5em 1.5em;
+  color: #4C4C54;
+  text-decoration: none;
+  font-weight: 400;
+}
+.profile-links-container a:hover {
+  background-color: rgba(74, 74, 74, 0.0588235294);
+  border-radius: 5px;
 }/*# sourceMappingURL=App.css.map */
