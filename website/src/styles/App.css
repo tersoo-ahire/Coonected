@@ -1194,8 +1194,20 @@
 }
 .profile-page .right-section .bottom-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+}
+.profile-page .right-section .bottom-container .left-area {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: 1px solid red;
+}
+.profile-page .right-section .bottom-container .right-area {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 1px solid red;
 }
 
 .profile-header-container {

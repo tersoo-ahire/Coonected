@@ -50,12 +50,7 @@ export default function Home(){
             <div className="right">
                 <UserProfile/>
                 <Suggestion/>
-                <div className="activity-component">
-                <h2>Latest Activity</h2>
-                    <div className="sub-component">
-                        <Activities/>
-                    </div>
-                </div>
+                <Activities/>
             </div>
         </section>
     )

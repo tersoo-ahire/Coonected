@@ -1398,8 +1398,22 @@
 
         .bottom-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
+            .left-area {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                border: $testborder;
+
+            }
+            .right-area {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                border: $testborder;
+
+            }
         }
     }
 }

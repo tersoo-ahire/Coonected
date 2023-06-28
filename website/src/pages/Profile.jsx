@@ -8,6 +8,7 @@ import Navigation from "../components/Navigation";
 import UserProfile from "../components/Userprofile";
 import ProfileHeader from "../components/ProfileHeader";
 import ProfileNav from "../components/ProfileNav";
+import Activities from "../components/Activities";
 
 
 export default function Profile(){
@@ -41,7 +42,12 @@ export default function Profile(){
                     </div>
                 </div>
                 <div className="bottom-container">
-                    Bottom container
+                    <div className="left-area">
+                        LEFT
+                    </div>
+                    <div className="right-area">
+                        <Activities/>
+                    </div>
                 </div>
             </div>
         </section>
