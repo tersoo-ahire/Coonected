@@ -455,7 +455,7 @@
   flex-direction: column;
   width: 27.5%;
   padding: 3em 2em 3em 2em;
-  gap: 3em;
+  gap: 2.5em;
   background-color: #E7F0FA;
   max-height: 100vh;
   overflow: hidden;
@@ -893,9 +893,9 @@
   padding-top: 0.2em;
 }
 .group-container .group-list a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: #6C6C6C;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -915,7 +915,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  max-height: 400px;
+  max-height: 250px;
   overflow-y: hidden;
   /* Set overflow-y to hidden to hide the scrollbar by default */
   transition: overflow-y 200s ease;
@@ -934,23 +934,23 @@
   padding: 0.5em;
 }
 .connection-container .connection-sub-container .connection-list .image-container {
-  width: 15%;
+  width: 30px;
 }
 .connection-container .connection-sub-container .connection-list .image-container img {
   width: 100%;
 }
 .connection-container .connection-sub-container .connection-list a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  color: #6C6C6C;
+  color: #000000;
   text-decoration: none;
   width: 70%;
   padding-left: 2em;
 }
 .connection-container .connection-sub-container .connection-list span {
   font-size: 0.7rem;
-  color: #6C6C6C;
-  width: 15%;
+  color: #000000;
+  width: 20%;
 }
 .connection-container .connection-sub-container .connection-list:hover {
   background-color: rgba(100, 100, 100, 0.105);
@@ -1162,7 +1162,7 @@
   flex-direction: column;
   width: 25%;
   padding: 3em 2em 3em 2em;
-  gap: 3em;
+  gap: 2.5em;
   background-color: #E7F0FA;
   max-height: 100vh;
   overflow: hidden;
