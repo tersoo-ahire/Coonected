@@ -1403,34 +1403,114 @@
     }
 }
 
+
+// PROFILE HEADER COMPONENT
 .profile-header-container {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
 
-    .cover-container {
+    .profile-image-container {
+        background-color: inherit;
+        border-radius: 20px;
+        position: absolute;
+        top: 5em;
+        left: 3em;
+        width: 180px;
+        height: 190px;
+        z-index: 99;
+
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+    }
+
+    .cover-image-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 195px;
+        border-radius: 20px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+
+    .cover-image-container {
+        position: relative;
+
+        .edit-cover {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 1em 0em;
+            width: 100px;
+            height: auto;
+            background-color: rgba(40, 40, 40, 0.6);
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            position: absolute;
+            right: 2.5em;
+            bottom: 2.5em;
+        
+            a {
+                text-decoration: none;
+                color: $white;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .name-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            position: absolute;
+            bottom: 2em;
+            left: 16em;
+            color: #FFFFFF;
+            z-index: 99;
+            h1 {
+                font-size: 1.85rem;
+                margin: 0;
+                font-weight: 800;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 195px;
+            border-radius: 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-attachment: fixed;
+            background-size: cover;
         }
     }
 
     .bottom-area {
         display: flex;
-        width: 80%;
+        width: 70%;
         margin-left: auto;
-        border: $testborder;
+        padding-right: 2em;
 
         .friend-count-container {
             display: flex;
-            width: 25%;
+            width: auto;
             flex-direction: column;
             gap: 0.5em;
-            border: $testborder;
 
             p {
                 color: #4C4C54;
-                font-size: 1.15rem;
-                font-weight: 700;
+                font-size: 1rem;
+                font-weight: 600;
                 margin: 0;
             }
 
@@ -1455,6 +1535,7 @@
             display: flex;
             align-items: center;
             margin-left: auto;
+            width: auto;
             gap: 1em;
 
             .submit3 {

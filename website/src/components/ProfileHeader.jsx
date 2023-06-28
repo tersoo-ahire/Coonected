@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import profileimage from "../assets/profile/profilepic.png";
 import coverimage from "../assets/profile/coverimage.png";
 import img1 from "../assets/profile/img1.png";
 import img2 from "../assets/profile/img2.png";
@@ -7,12 +8,21 @@ import img3 from "../assets/profile/img3.png";
 import img4 from "../assets/profile/img4.png";
 import img5 from "../assets/profile/img5.png";
 
-
-
 export default function ProfileHeader() {
+    // PROFILE HEADER COMPONENT
     return (
         <div className="profile-header-container">
-            <div className="cover-container">
+            <div className="profile-image-container">
+                <img src={profileimage} alt="Profile Image" />
+            </div>
+            <div className="cover-image-container">
+                <button className="edit-cover">
+                    <Link to={""}>Edit Cover</Link>
+                </button>
+                <div className="name-container">
+                    <h1>John Clark</h1>
+                    <span>@badmangamer</span>
+                </div>
                 <img src={coverimage} alt="Cover image" />
             </div>
             <div className="bottom-area">
