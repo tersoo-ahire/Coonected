@@ -9,11 +9,13 @@ import UserProfile from "../components/Userprofile";
 import ProfileHeader from "../components/ProfileHeader";
 import ProfileNav from "../components/ProfileNav";
 import Activities from "../components/Activities";
-
+// SUB COMPONENTS
+import Posts from "../components/Posts";
 
 export default function Profile(){
     const grouplist = groupdata.map(item => (<Group key={item.id} {...item}/>))
     const connectionlist = connectiondata.map(item => (<Connections key={item.id} {...item}/>))
+    
     return (
         // PROFILE PAGE SECTION
         <section className="profile-page">
@@ -43,7 +45,7 @@ export default function Profile(){
                 </div>
                 <div className="bottom-container">
                     <div className="left-area">
-                        LEFT
+                        <Posts/>
                     </div>
                     <div className="right-area">
                         <Activities/>

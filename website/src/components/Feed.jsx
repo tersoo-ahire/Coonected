@@ -33,7 +33,7 @@ export default function Feed(props){
 
     return (
         <div className="feed-container">
-            <div className="top-container">
+            <div className="top-container-feed">
                 <div className="image-container">
                     <img src={props.profile_picture} alt="Post" />
                 </div>
@@ -71,7 +71,7 @@ export default function Feed(props){
                     </div>
                 </div>
             </div>
-            <div className="bottom-container">
+            <div className="bottom-container-feed">
                 <div className="top-area">
                     <div className="icon-container">
                         <img src={like} alt="Like" />
