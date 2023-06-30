@@ -1350,6 +1350,28 @@
     }
 }
 
+// ABOUT COMPONENT
+.about-container {
+    @extend .post-container;
+
+    .details-container {
+        display: flex;
+        gap: 3em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    }
+    .left-container {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+    .right-container {
+        @extend .left-container;
+        font-weight: 400;
+    }
+}
+
+
 // PROFILE SECTION
 .profile-page {
     display: flex;
