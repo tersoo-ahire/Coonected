@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Search from "../components/Search";
 import Group from "../components/Group";
 import groupdata from "../data/group";
