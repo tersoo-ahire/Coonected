@@ -1807,5 +1807,11 @@ h2 {
         background-color: #4a4a4a0f;
         border-radius: 5px;
     }
+    a.active {
+        color: $primaryblue;
+        font-weight: bold;
+        border-bottom: 2px solid $primaryblue;
+        
+    }
 }
 

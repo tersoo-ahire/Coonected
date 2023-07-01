@@ -6,7 +6,7 @@ import comment from "../assets/feed/comment.svg";
 import share from "../assets/feed/share.svg";
 import CommentList from "./CommentList";
 import commentdata from "../data/commentdata.js";
-import CommentBottom from "./CommentBottom";
+import CommentBottom from "./CommentBottom.jsx";
 
 
 export default function Feed(props){
