@@ -13,6 +13,7 @@ import Activities from "../components/Activities";
 import Posts from "../components/Posts";
 import About from "../components/About";
 import Photos from "../components/Photos";
+import Videos from "../components/Videos";
 
 export default function Profile(){
     const grouplist = groupdata.map(item => (<Group key={item.id} {...item}/>))
@@ -47,7 +48,7 @@ export default function Profile(){
                 </div>
                 <div className="bottom-container">
                     <div className="left-area">
-                        <Photos/>
+                        <Videos/>
                     </div>
                     <div className="right-area">
                         <Activities/>

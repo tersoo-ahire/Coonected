@@ -1383,7 +1383,7 @@ h2 {
     }
 }
 
-// PHOTO CONTAINER
+// PHOTO COMPONENT
 .photos-container {
     @extend .post-container;
     flex-direction: row;
@@ -1392,10 +1392,22 @@ h2 {
     gap: 0.5em;
 
     img {
-        max-width: 32%;
+        width: 32%;
     }
 }
 
+// VIDEO COMPONENT
+.videos-container {
+    @extend .photos-container;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+
+    video {
+        width: 32%;
+    }
+}
 
 // PROFILE SECTION
 .profile-page {

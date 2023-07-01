@@ -765,7 +765,7 @@ h2 {
   background-color: #3377FF;
 }
 
-.post-container, .photos-container, .about-container, .feed-container {
+.post-container, .photos-container, .videos-container, .about-container, .feed-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -775,16 +775,16 @@ h2 {
   border-radius: 16px;
   padding: 1.5em;
 }
-.post-container .top, .photos-container .top, .about-container .top, .feed-container .top {
+.post-container .top, .photos-container .top, .videos-container .top, .about-container .top, .feed-container .top {
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 2.5em;
 }
-.post-container .top img, .photos-container .top img, .about-container .top img, .feed-container .top img {
+.post-container .top img, .photos-container .top img, .videos-container .top img, .about-container .top img, .feed-container .top img {
   max-width: 50px;
 }
-.post-container .top input, .photos-container .top input, .about-container .top input, .feed-container .top input {
+.post-container .top input, .photos-container .top input, .videos-container .top input, .about-container .top input, .feed-container .top input {
   width: 100%;
   padding: 0em 1.5em;
   background-color: rgba(220, 220, 220, 0.4901960784);
@@ -793,14 +793,14 @@ h2 {
   border-radius: 16px;
   color: #363636;
 }
-.post-container .bottom, .photos-container .bottom, .about-container .bottom, .feed-container .bottom {
+.post-container .bottom, .photos-container .bottom, .videos-container .bottom, .about-container .bottom, .feed-container .bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.post-container .bottom .media-container, .photos-container .bottom .media-container, .about-container .bottom .media-container, .feed-container .bottom .media-container {
+.post-container .bottom .media-container, .photos-container .bottom .media-container, .videos-container .bottom .media-container, .about-container .bottom .media-container, .feed-container .bottom .media-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -810,10 +810,10 @@ h2 {
   color: #1F1F1F;
   font-weight: 600;
 }
-.post-container .bottom .media-container img, .photos-container .bottom .media-container img, .about-container .bottom .media-container img, .feed-container .bottom .media-container img {
+.post-container .bottom .media-container img, .photos-container .bottom .media-container img, .videos-container .bottom .media-container img, .about-container .bottom .media-container img, .feed-container .bottom .media-container img {
   height: 20px;
 }
-.post-container .bottom button, .photos-container .bottom button, .about-container .bottom button, .feed-container .bottom button {
+.post-container .bottom button, .photos-container .bottom button, .videos-container .bottom button, .about-container .bottom button, .feed-container .bottom button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -824,7 +824,7 @@ h2 {
   outline: none;
   border-radius: 8px;
 }
-.post-container .bottom button:hover, .photos-container .bottom button:hover, .about-container .bottom button:hover, .feed-container .bottom button:hover {
+.post-container .bottom button:hover, .photos-container .bottom button:hover, .videos-container .bottom button:hover, .about-container .bottom button:hover, .feed-container .bottom button:hover {
   background-color: #1e69ff;
 }
 
@@ -1178,14 +1178,24 @@ h2 {
   gap: 1.5em;
 }
 
-.photos-container {
+.photos-container, .videos-container {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5em;
 }
-.photos-container img {
-  max-width: 32%;
+.photos-container img, .videos-container img {
+  width: 32%;
+}
+
+.videos-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+}
+.videos-container video {
+  width: 32%;
 }
 
 .profile-page {
