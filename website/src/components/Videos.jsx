@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "./video";
+import Video from "./Video";
 import videosdata from "../data/videos";
 
 export default function Videos(){
