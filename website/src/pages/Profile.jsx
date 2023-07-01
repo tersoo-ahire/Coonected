@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Search from "../components/Search";
 import Group from "../components/Group";
 import groupdata from "../data/group";
@@ -51,6 +51,7 @@ export default function Profile() {
         <div className="bottom-container">
           <div className="left-area">
             <Routes>
+              <Route path="/" element={<Navigate to="posts" replace />} />
               <Route path="posts" element={<Posts />} />
               <Route path="about" element={<About />} />
               <Route path="photos" element={<Photos />} />

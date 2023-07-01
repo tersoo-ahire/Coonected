@@ -7,7 +7,7 @@ import feeling from "../assets/post/feeling.svg";
 
 export default function CommentBottom() {
     return (
-        <div class="bottom-area">
+        <div className="bottom-area">
             <div className="left-con">
                 <img src={paul} alt="Paul" />
             </div>

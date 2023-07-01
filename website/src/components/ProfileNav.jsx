@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function ProfileNav() {
   const [activeLink, setActiveLink] = useState("posts");
+
+  useEffect(() => {
+    setActiveLink("posts");
+  }, []);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -10,7 +14,13 @@ export default function ProfileNav() {
 
   return (
     <div className="profile-links-container">
-      <Link to="./posts" className={activeLink === "posts" ? "active" : ""} onClick={() => handleLinkClick("posts")}> Posts </Link>
+      <Link
+        to="./posts"
+        className={activeLink === "posts" ? "active" : ""}
+        onClick={() => handleLinkClick("posts")}
+      >
+        Posts
+      </Link>
       <Link
         to="./about"
         className={activeLink === "about" ? "active" : ""}
