@@ -1202,21 +1202,67 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 1.5em 1em;
   gap: 0.75em;
 }
 .nfts-container .nft {
   display: flex;
   flex-direction: column;
-  width: 31.5%;
-  border-radius: 16px;
+  width: 47%;
+  border-radius: 10px;
   padding: 0.75em;
   background: #FFF;
   box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.1);
   gap: 0.5em;
+  margin-bottom: 1em;
 }
 .nfts-container .nft img {
   width: 100%;
   border-radius: 11.15px;
+}
+.nfts-container .nft .collections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--greyscale-500, #64748B);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+.nfts-container .nft .collections img {
+  width: 28px;
+}
+.nfts-container .nft .name {
+  color: var(--greyscale-900, #0F172A);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+}
+.nfts-container .nft .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--greyscale-900, #0F172A);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nfts-container .nft .price .price-sub {
+  display: flex;
+  gap: 0.5em;
+}
+.nfts-container .nft .price .price-sub img {
+  width: 16px;
+}
+.nfts-container .nft .price button {
+  background-color: #3377FF;
+  border: none;
+  outline: none;
+  width: 84px;
+  height: 34px;
+  border-radius: 5px;
+}
+.nfts-container .nft .price button:hover {
+  background-color: #1e69ff;
 }
 
 .profile-page {
