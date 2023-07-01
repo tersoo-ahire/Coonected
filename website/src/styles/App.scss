@@ -1383,6 +1383,19 @@ h2 {
     }
 }
 
+// PHOTO CONTAINER
+.photos-container {
+    @extend .post-container;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+
+    img {
+        max-width: 32%;
+    }
+}
+
 
 // PROFILE SECTION
 .profile-page {
