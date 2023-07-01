@@ -1409,6 +1409,15 @@ h2 {
     }
 }
 
+// NFTs COMPONENT
+.nfts-container {
+    @extend .photos-container;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
 // PROFILE SECTION
 .profile-page {
     display: flex;
