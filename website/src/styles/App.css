@@ -1202,7 +1202,21 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.75em;
+}
+.nfts-container .nft {
+  display: flex;
+  flex-direction: column;
+  width: 31.5%;
+  border-radius: 16px;
+  padding: 0.75em;
+  background: #FFF;
+  box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.1);
   gap: 0.5em;
+}
+.nfts-container .nft img {
+  width: 100%;
+  border-radius: 11.15px;
 }
 
 .profile-page {
