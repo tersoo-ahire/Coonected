@@ -10,7 +10,7 @@ import setting from "../assets/navigation/setting.svg";
 export default function Navigation(){
     return (
         <div className="navigation-container">
-            <Link style={{backgroundColor: "#3377FF"}}>
+            <Link to={"/home"} style={{backgroundColor: "#3377FF"}}>
                 <img src={home} alt="Home Icon" />
             </Link>
             <Link>
