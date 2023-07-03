@@ -13,19 +13,19 @@ export default function Navigation(){
             <Link to={"/home"} style={{backgroundColor: "#3377FF"}}>
                 <img src={home} alt="Home Icon" />
             </Link>
-            <Link>
+            <Link to={"/group"}>
                 <img src={group} alt="Group Icon" />
             </Link>
-            <Link>
+            <Link to={"/message"}>
                 <img src={message} alt="Message Icon" />
             </Link>
-            <Link>
+            <Link to={"/explorer"}>
                 <img src={explore} alt="Explore Icon" />
             </Link>
-            <Link>
+            <Link to={"/notifications"}>
                 <img src={notification} alt="Notification Icon" />
             </Link>
-            <Link>
+            <Link to={"/settings"}>
                 <img src={setting} alt="Setting Icon" />
             </Link>
         </div>
