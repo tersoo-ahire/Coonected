@@ -1623,4 +1623,31 @@ h2 {
   color: #3377FF;
   font-weight: bold;
   border-bottom: 2px solid #3377FF;
+}
+
+.explore-page {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.6588235294);
+  width: 100%;
+}
+.explore-page .left-section {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.explore-page .left-section .top-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 1em 1em 2em;
+  border: 1px solid red;
+}
+.explore-page .right-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #E7F0FA;
+  padding: 3em 2em 3em 2em;
+  min-height: 100vh;
+  gap: 4em;
 }/*# sourceMappingURL=App.css.map */

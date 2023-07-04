@@ -1891,3 +1891,33 @@ h2 {
     }
 }
 
+
+// EXPLORE PAGE SECTION
+.explore-page {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffffa8;
+    width: 100%;
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        .top-area {
+            display: flex;
+            justify-content: space-between;
+            padding: 0em 1em 1em 2em;
+            border: $testborder;
+        }
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        background-color: $backgroundcolor;
+        padding: 3em 2em 3em 2em;
+        min-height: 100vh;
+        gap: 4em;
+    }
+}
