@@ -1903,11 +1903,24 @@ h2 {
         display: flex;
         flex-direction: column;
         width: 75%;
+        border: $testborder;
         .top-area {
             display: flex;
-            justify-content: space-between;
-            padding: 0em 1em 1em 2em;
-            border: $testborder;
+            flex-direction: column;
+            gap: 2em;
+            padding: 0em 2em;
+            .search-nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 3em;
+            }
+        }
+        .bottom-area {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0em 2em;
         }
     }
 
@@ -1919,5 +1932,31 @@ h2 {
         padding: 3em 2em 3em 2em;
         min-height: 100vh;
         gap: 4em;
+    }
+}
+
+// EXPLORE NAVIGATION LINKS
+.explore-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5em;
+    padding: 1em 0em;
+    a {
+        padding: 0.5em 1.5em;
+        color: #4C4C54;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    a:hover {
+        background-color: #4a4a4a0f;
+        border-radius: 5px;
+    }
+    a.active {
+        color: $primaryblue;
+        font-weight: bold;
+        border-bottom: 2px solid $primaryblue;
+        
     }
 }

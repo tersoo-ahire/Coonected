@@ -1635,12 +1635,25 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 75%;
+  border: 1px solid red;
 }
 .explore-page .left-section .top-area {
   display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0em 2em;
+}
+.explore-page .left-section .top-area .search-nav {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 0em 1em 1em 2em;
-  border: 1px solid red;
+  width: 100%;
+  gap: 3em;
+}
+.explore-page .left-section .bottom-area {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0em 2em;
 }
 .explore-page .right-section {
   display: flex;
@@ -1650,4 +1663,27 @@ h2 {
   padding: 3em 2em 3em 2em;
   min-height: 100vh;
   gap: 4em;
+}
+
+.explore-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5em;
+  padding: 1em 0em;
+}
+.explore-links-container a {
+  padding: 0.5em 1.5em;
+  color: #4C4C54;
+  text-decoration: none;
+  font-weight: 400;
+}
+.explore-links-container a:hover {
+  background-color: rgba(74, 74, 74, 0.0588235294);
+  border-radius: 5px;
+}
+.explore-links-container a.active {
+  color: #3377FF;
+  font-weight: bold;
+  border-bottom: 2px solid #3377FF;
 }/*# sourceMappingURL=App.css.map */
