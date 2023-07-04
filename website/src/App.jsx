@@ -9,20 +9,22 @@ import Invitation from "./pages/Invitation";
 import Success from "./pages/InvitationSuccess";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import Explore from "./pages/Explore";
 
 export default function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Signin />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/profile/*" element={<Profile />} />
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/forget-password" element={<ForgetPassword />} />
         <Route path="/sign-in/interests" element={<InterestSection />} />
         <Route path="/invitation" element={<Invitation />} />
         <Route path="/invitation/success" element={<Success />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/profile/*" element={<Profile />} />
+        <Route path="/explore" element={<Explore/>} />
       </Routes>
     </>
   );
