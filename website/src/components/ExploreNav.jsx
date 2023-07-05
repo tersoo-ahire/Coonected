@@ -6,7 +6,7 @@ export default function ExploreNav() {
     const [activeLink, setActiveLink] = useState("media");
 
     useEffect(() => {
-      setActiveLink("posts");
+      setActiveLink("media");
     }, []);
   
     const handleLinkClick = (link) => {
