@@ -1,9 +1,13 @@
 import React from "react"
+import ProductsExploreImage from "./ProductsExploreImage"
+import productsexploredata from "../data/productsexploredata"
 
-export default function ProductsExplore(){
+export default function ProductExplore(){
+    const productsexplorelist = productsexploredata.map(item => (<ProductsExploreImage key={item.id} {...item} />))
+
     return (
-        <div>
-            Products
+        <div className="media-container">
+            {productsexplorelist}
         </div>
     )
 }
