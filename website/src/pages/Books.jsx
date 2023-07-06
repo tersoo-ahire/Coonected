@@ -17,9 +17,10 @@ export default function Books(){
                 <h1>Recommended</h1>
                 <div className="bottom-area">
                     <Routes>
-                        <Route path="/" element={<Navigate to="/ebooks" replace/> } />
-                        <Route path="/ebooks" element={<Ebooks />} />
-                        <Route path="/audiobooks" element={<Audiobooks />} />
+                        <Route path="/" element={<Navigate to="ebooks" replace/> } />
+                        <Route path="all" element={<Ebooks />} />
+                        <Route path="ebooks" element={<Ebooks />} />
+                        <Route path="audiobooks" element={<Audiobooks />} />
                     </Routes>
                 </div>
             </div>
