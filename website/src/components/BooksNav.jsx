@@ -5,8 +5,8 @@ export default function BooksNav(){
     return (
         <div className="books-links-container">
             <Link>All</Link>
-            <Link>Books</Link>
-            <Link>Audiobook</Link>
+            <Link>eBooks</Link>
+            <Link>Audiobooks</Link>
         </div>
     )
 }

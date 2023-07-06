@@ -1,3 +1,13 @@
+import bookimg1 from "../assets/books/bookimg1.png"
+import bookimg2 from "../assets/books/bookimg2.png"
+import bookimg3 from "../assets/books/bookimg3.png"
+import bookimg4 from "../assets/books/bookimg4.png"
+import bookimg5 from "../assets/books/bookimg5.png"
+import bookimg6 from "../assets/books/bookimg6.png"
+import bookimg7 from "../assets/books/bookimg7.png"
+import bookimg8 from "../assets/books/bookimg8.png"
+import bookimg9 from "../assets/books/bookimg9.png"
+
 export default [
     {
         id: 1,

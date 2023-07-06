@@ -1763,6 +1763,9 @@ h2 {
 .books-page .left-section h1 {
   margin: 0;
 }
+.books-page .left-section .bottom-area {
+  border: 1px solid red;
+}
 .books-page .right-section {
   display: flex;
   flex-direction: column;
