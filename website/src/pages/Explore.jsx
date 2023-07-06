@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Search from "../components/Search";
-import Userprofile from "../components/Userprofile";
+import UserProfile from "../components/Userprofile";
 import Activities from "../components/Activities";
 import Navigation from "../components/Navigation";
 import ExploreNav from "../components/ExploreNav";
@@ -36,7 +36,7 @@ export default function Explore() {
                 </div>
             </div>
             <div className="right-section">
-                <Userprofile/>
+                <UserProfile/>
                 <Activities/>
             </div>
         </section>

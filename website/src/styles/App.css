@@ -1745,4 +1745,25 @@ h2 {
 .media-container .media-sub .content #add-icon:hover {
   cursor: pointer;
   transform: rotate(180deg);
+}
+
+.books-page {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.6588235294);
+  width: 100%;
+}
+.books-page .left-section {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.books-page .right-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #E7F0FA;
+  padding: 3em 2em 3em 2em;
+  min-height: 100vh;
+  gap: 4em;
 }/*# sourceMappingURL=App.css.map */

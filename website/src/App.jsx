@@ -10,6 +10,7 @@ import Success from "./pages/InvitationSuccess";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Explore from "./pages/Explore";
+import Books from "./pages/Books";
 
 export default function App() {
   return (
@@ -24,7 +25,8 @@ export default function App() {
         <Route path="/invitation/success" element={<Success />} />
         <Route path="/home" element={<Home />} />
         <Route path="/profile/*" element={<Profile />} />
-        <Route path="/explore/*" element={<Explore/>} />
+        <Route path="/explore/*" element={<Explore />} />
+        <Route path="/books" element={<Books/>} />
       </Routes>
     </>
   );

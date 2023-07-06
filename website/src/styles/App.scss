@@ -2023,5 +2023,28 @@ h2 {
             }              
         }
     }
+}
 
+// BOOKS PAGE SECTION
+.books-page {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffffa8;
+    width: 100%;
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        background-color: $backgroundcolor;
+        padding: 3em 2em 3em 2em;
+        min-height: 100vh;
+        gap: 4em; 
+    }
 }
