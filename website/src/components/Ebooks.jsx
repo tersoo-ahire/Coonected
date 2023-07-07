@@ -7,7 +7,7 @@ export default function Ebooks(){
     
     return (
         <>
-            <h1>Recommended</h1>
+            <h1>eBooks</h1>
             <div className="ebooks-container">
                 {ebookslist}
             </div>
