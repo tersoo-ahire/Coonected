@@ -2138,6 +2138,14 @@ h2 {
             flex-direction: column;
             gap: 1em;
 
+            .ratings {
+                display: flex;
+                gap: 0.25em;
+                img {
+                    width: 20px;
+                }
+            }
+
             span {
                 font-size: 0.875rem;
             }

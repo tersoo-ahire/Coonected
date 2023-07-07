@@ -1846,6 +1846,13 @@ h2 {
   flex-direction: column;
   gap: 1em;
 }
+.ebooks-container .details-container .left .ratings {
+  display: flex;
+  gap: 0.25em;
+}
+.ebooks-container .details-container .left .ratings img {
+  width: 20px;
+}
 .ebooks-container .details-container .left span {
   font-size: 0.875rem;
 }
