@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function BooksNav() {
   const [activeLink, setActiveLink] = useState("ebooks");
+  const location = useLocation();
 
   useEffect(() => {
-    setActiveLink("ebooks");
-  }, []);
+    setActiveLink(location.pathname.substring(1));
+  }, [location.pathname]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);

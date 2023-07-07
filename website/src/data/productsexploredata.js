@@ -63,4 +63,4 @@ export default [
         image: img9,
         viewcount: 75,
     },
-]
+].sort(() => Math.random() - 0.5);
