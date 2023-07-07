@@ -14,7 +14,6 @@ export default function Books(){
             <div className="left-section">
                 <Search/>
                 <BooksNav/>
-                <h1>Recommended</h1>
                 <div className="bottom-area">
                     <Routes>
                         <Route path="/" element={<Navigate to="ebooks" replace/> } />
