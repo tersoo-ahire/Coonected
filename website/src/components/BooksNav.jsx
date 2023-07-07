@@ -1,39 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function BooksNav() {
-  const [activeLink, setActiveLink] = useState("ebooks");
   const location = useLocation();
-
-  useEffect(() => {
-    setActiveLink(location.pathname.substring(1));
-  }, [location.pathname]);
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
 
   return (
     <div className="books-links-container">
-      <Link
-        to="./all"
-        className={activeLink === "all" ? "active" : ""}
-        onClick={() => handleLinkClick("all")}
-      >
+      <Link to="/books/all" className={ location.pathname === "/books/all" ? "active" : ""}>
         All
       </Link>
-      <Link
-        to="./ebooks"
-        className={activeLink === "ebooks" ? "active" : ""}
-        onClick={() => handleLinkClick("ebooks")}
-      >
+      <Link to="/books/ebooks" className={ location.pathname === "/books/ebooks" ? "active" : ""}>
         eBooks
       </Link>
-      <Link
-        to="./audiobooks"
-        className={activeLink === "audiobooks" ? "active" : ""}
-        onClick={() => handleLinkClick("audiobooks")}
-      >
+      <Link to="/books/audiobooks" className={ location.pathname === "/books/audiobooks" ? "active" : ""}>
         Audiobooks
       </Link>
     </div>

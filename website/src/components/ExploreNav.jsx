@@ -1,53 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 
 export default function ExploreNav() {
-    const [activeLink, setActiveLink] = useState("media");
-
-    useEffect(() => {
-      setActiveLink("media");
-    }, []);
-  
-    const handleLinkClick = (link) => {
-      setActiveLink(link);
-    };
+    const location = useLocation();
 
     return (
         <div className="explore-links-container">
-            <Link
-                to="./media"
-                className={activeLink === "media" ? "active" : ""}
-                onClick={() => handleLinkClick("media")}
-            >
+            <Link to="/explore/media" className={ location.pathname === "/explore/media" ? "active" : ""}>
                 Media
             </Link>
-            <Link
-                to="./places"
-                className={activeLink === "places" ? "active" : ""}
-                onClick={() => handleLinkClick("places")}
-            >
+            <Link to="/explore/places" className={ location.pathname === "/explore/places" ? "active" : ""}>
                 Places
             </Link>
-            <Link
-                to="./products"
-                className={activeLink === "products" ? "active" : ""}
-                onClick={() => handleLinkClick("products")}
-            >
+            <Link to="/explore/products" className={ location.pathname === "/explore/products" ? "active" : ""}>
                 Products
             </Link>
-            <Link
-                to="./lifestyle"
-                className={activeLink === "lifestyle" ? "active" : ""}
-                onClick={() => handleLinkClick("lifestyle")}
-            >
+            <Link to="/explore/lifestyle" className={ location.pathname === "/explore/lifestyle" ? "active" : ""}>
                 Lifestyle
             </Link>
-            <Link
-                to="./events"
-                className={activeLink === "events" ? "active" : ""}
-                onClick={() => handleLinkClick("events")}
-            >
+            <Link to="/explore/events" className={ location.pathname === "/explore/events" ? "active" : ""}>
                 Events
             </Link>
         </div>
