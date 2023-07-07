@@ -1872,4 +1872,8 @@ h2 {
 .ebooks-container .details-container .right a:hover {
   background-color: #3377FF;
   color: #ffffff;
+}
+
+.books-content-container {
+  display: flex;
 }/*# sourceMappingURL=App.css.map */
