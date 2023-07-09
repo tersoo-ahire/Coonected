@@ -8,7 +8,7 @@ import bookimg7 from "../assets/books/bookimg7.png";
 import bookimg8 from "../assets/books/bookimg8.png";
 import bookimg9 from "../assets/books/bookimg9.png";
 
-export const booksData = [
+export default [
   {
     id: 1,
     book_image: bookimg1,

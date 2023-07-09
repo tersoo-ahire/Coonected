@@ -7,6 +7,7 @@ import BooksNav from "../components/BooksNav";
 // EXPLORE PAGE SUB COMPONENTS
 import Ebooks from "../components/Ebooks";
 import Audiobooks from "../components/Audiobooks";
+import BookPage from "../components/BookPage";
 
 export default function Books(){
     return (
@@ -20,6 +21,7 @@ export default function Books(){
                         <Route path="/all" element={<Ebooks />} />
                         <Route path="/ebooks" element={<Ebooks />} />
                         <Route path="/audiobooks" element={<Audiobooks />} />
+                        <Route path="/book" element={<BookPage />} />
                     </Routes>
                 </div>
             </div>

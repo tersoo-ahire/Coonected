@@ -11,7 +11,6 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Explore from "./pages/Explore";
 import Books from "./pages/Books";
-import BookPage from "./components/BookPage";
 
 export default function App() {
   return (
@@ -27,7 +26,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/profile/*" element={<Profile />} />
         <Route path="/explore/*" element={<Explore />} />
-        <Route path="/books/*" element={<Books/>} />
+        <Route path="/books/*" element={<Books />} />
       </Routes>
     </>
   );

@@ -1874,6 +1874,82 @@ h2 {
   color: #ffffff;
 }
 
-.books-content-container {
+.book-content-container {
   display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.book-content-container .top-section {
+  display: flex;
+  gap: 1.5em;
+}
+.book-content-container .top-section .image-container {
+  width: 40%;
+}
+.book-content-container .top-section .image-container img {
+  width: 100%;
+}
+.book-content-container .top-section .details-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 0.75em;
+}
+.book-content-container .top-section .details-container h1 {
+  color: #4C4C54;
+  font-size: 2.375rem;
+  font-weight: 800;
+  margin: 0;
+}
+.book-content-container .top-section .details-container h3 {
+  color: #4C4C54;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.book-content-container .top-section .details-container span {
+  color: #4C4C54;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.book-content-container .top-section .details-container img {
+  width: 20px;
+  margin-top: 1em;
+}
+.book-content-container .top-section .details-container .buttons-container {
+  display: flex;
+  gap: 1em;
+  margin: 1.5em 0em;
+}
+.book-content-container .top-section .details-container .buttons-container button {
+  background-color: #ffffff;
+  color: #3377FF;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75em 1.25em;
+  border: 1px solid #3377FF;
+  border-radius: 5px;
+}
+.book-content-container .top-section .details-container .information {
+  display: flex;
+}
+.book-content-container .top-section .details-container .information .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  align-items: center;
+  padding-right: 1.5em;
+  margin-right: 1.5em;
+  border-right: 1.25px solid #4C4C54;
+}
+.book-content-container .top-section .details-container .information .detail h4 {
+  color: #4C4C54;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+.book-content-container .top-section .details-container .information .detail span {
+  color: #4C4C54;
+  font-size: 1.5rem;
+  font-weight: 800;
 }/*# sourceMappingURL=App.css.map */
