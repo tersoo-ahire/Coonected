@@ -2311,4 +2311,15 @@ h2 {
 
         }
     }
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: #4C4C54;
+            font-size: 1.8rem;
+            font-weight: 800; 
+        }
+    }
 }

@@ -1993,4 +1993,13 @@ h2 {
 }
 .book-content-container .top-section .details-container .end a:hover {
   background-color: #1e69ff;
+}
+.book-content-container .bottom-section {
+  display: flex;
+  flex-direction: column;
+}
+.book-content-container .bottom-section h2 {
+  color: #4C4C54;
+  font-size: 1.8rem;
+  font-weight: 800;
 }/*# sourceMappingURL=App.css.map */
