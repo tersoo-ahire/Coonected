@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import book1 from "../assets/books/bookimg1.png";
 import star from "../assets/books/star.svg";
+import bookopen from "../assets/books/book_open_text.svg"
 
 export default function BookPage(){
     return (
@@ -36,6 +38,12 @@ export default function BookPage(){
                             <h4>Reviews</h4>
                             <span>198</span>
                         </div>
+                    </div>
+                    <div className="end">
+                        <span>
+                            <img src={bookopen} alt="Book Open" />  
+                        </span>
+                        <Link>Read now</Link>
                     </div>
                 </div>
             </div>

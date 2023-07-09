@@ -1888,12 +1888,14 @@ h2 {
 }
 .book-content-container .top-section .image-container img {
   width: 100%;
+  border-radius: 25px;
 }
 .book-content-container .top-section .details-container {
   display: flex;
   flex-direction: column;
   width: 60%;
   gap: 0.75em;
+  position: relative;
 }
 .book-content-container .top-section .details-container h1 {
   color: #4C4C54;
@@ -1952,4 +1954,43 @@ h2 {
   color: #4C4C54;
   font-size: 1.5rem;
   font-weight: 800;
+}
+.book-content-container .top-section .details-container .information .detail:last-child {
+  border-right: none;
+}
+.book-content-container .top-section .details-container .end {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  position: absolute;
+  bottom: 0;
+}
+.book-content-container .top-section .details-container .end span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3377FF;
+  border-radius: 5px;
+}
+.book-content-container .top-section .details-container .end span img {
+  width: 25px;
+  margin: 0;
+}
+.book-content-container .top-section .details-container .end a {
+  display: flex;
+  background-color: #3377FF;
+  width: 150px;
+  height: auto;
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.book-content-container .top-section .details-container .end a:hover {
+  background-color: #1e69ff;
 }/*# sourceMappingURL=App.css.map */
