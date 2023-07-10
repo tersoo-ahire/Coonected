@@ -1895,35 +1895,51 @@ h2 {
   flex-direction: column;
   width: 60%;
   gap: 0.75em;
-  position: relative;
+  justify-content: space-between;
 }
-.book-content-container .top-section .details-container h1 {
+.book-content-container .top-section .details-container .item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.book-content-container .top-section .details-container .item h1 {
   color: #4C4C54;
   font-size: 2.375rem;
   font-weight: 800;
   margin: 0;
 }
-.book-content-container .top-section .details-container h3 {
+.book-content-container .top-section .details-container .item h3 {
   color: #4C4C54;
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0;
 }
-.book-content-container .top-section .details-container span {
+.book-content-container .top-section .details-container .item .ratings {
+  display: flex;
+  gap: 0.25em;
+}
+.book-content-container .top-section .details-container .item .ratings img {
+  width: 20px;
+}
+.book-content-container .top-section .details-container .item span {
   color: #4C4C54;
   font-size: 0.875rem;
   font-weight: 400;
+  margin-top: 0.5em;
 }
-.book-content-container .top-section .details-container img {
+.book-content-container .top-section .details-container .item img {
   width: 20px;
-  margin-top: 1em;
 }
-.book-content-container .top-section .details-container .buttons-container {
+.book-content-container .top-section .details-container .item2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.book-content-container .top-section .details-container .item2 .buttons-container {
   display: flex;
   gap: 1em;
-  margin: 1.5em 0em;
 }
-.book-content-container .top-section .details-container .buttons-container button {
+.book-content-container .top-section .details-container .item2 .buttons-container button {
   background-color: #ffffff;
   color: #3377FF;
   text-decoration: none;
@@ -1932,10 +1948,10 @@ h2 {
   border: 1px solid #3377FF;
   border-radius: 5px;
 }
-.book-content-container .top-section .details-container .information {
+.book-content-container .top-section .details-container .item2 .information {
   display: flex;
 }
-.book-content-container .top-section .details-container .information .detail {
+.book-content-container .top-section .details-container .item2 .information .detail {
   display: flex;
   flex-direction: column;
   gap: 0.25em;
@@ -1944,26 +1960,24 @@ h2 {
   margin-right: 1.5em;
   border-right: 1.25px solid #4C4C54;
 }
-.book-content-container .top-section .details-container .information .detail h4 {
+.book-content-container .top-section .details-container .item2 .information .detail h4 {
   color: #4C4C54;
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
 }
-.book-content-container .top-section .details-container .information .detail span {
+.book-content-container .top-section .details-container .item2 .information .detail span {
   color: #4C4C54;
   font-size: 1.5rem;
   font-weight: 800;
 }
-.book-content-container .top-section .details-container .information .detail:last-child {
+.book-content-container .top-section .details-container .item2 .information .detail:last-child {
   border-right: none;
 }
 .book-content-container .top-section .details-container .end {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  position: absolute;
-  bottom: 0;
 }
 .book-content-container .top-section .details-container .end span {
   width: 50px;
@@ -2002,4 +2016,8 @@ h2 {
   color: #4C4C54;
   font-size: 1.8rem;
   font-weight: 800;
+}
+.book-content-container .bottom-section p {
+  font-size: 1rem;
+  line-height: 1.5em;
 }/*# sourceMappingURL=App.css.map */

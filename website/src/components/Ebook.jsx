@@ -29,7 +29,7 @@ export default function Ebook(props){
                     </span> 
                 </div>
                 <div className="right">
-                    <Link>Read now</Link>
+                    <Link to={`/books/ebooks/${props.id}`}>Read now</Link>
                 </div>
             </div>
         </div>

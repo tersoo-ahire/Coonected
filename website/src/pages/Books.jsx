@@ -8,6 +8,7 @@ import BooksNav from "../components/BooksNav";
 import Ebooks from "../components/Ebooks";
 import Audiobooks from "../components/Audiobooks";
 import BookPage from "../components/BookPage";
+import ebooksData from "../data/ebooksdata";
 
 export default function Books(){
     return (
@@ -20,8 +21,8 @@ export default function Books(){
                         <Route path="/" element={<Navigate to="ebooks" replace/> } />
                         <Route path="/all" element={<Ebooks />} />
                         <Route path="/ebooks" element={<Ebooks />} />
+                        <Route path="/ebooks/:id" element={<BookPage books={ebooksData} />} />
                         <Route path="/audiobooks" element={<Audiobooks />} />
-                        <Route path="/book" element={<BookPage />} />
                     </Routes>
                 </div>
             </div>
