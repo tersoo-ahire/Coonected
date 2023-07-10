@@ -6,7 +6,7 @@ import downarrow from "../assets/downarrow.svg";
 export default function UserProfile(){
     return (
         <Link to="/profile" className="user-profile-container">
-            <img src={paul} alt="John Clark" />
+            <img src={paul} alt="John Clark" className="profile" />
             <span>John Clark</span>
             <img src={downarrow} alt="Down Arrow" />
         </Link>

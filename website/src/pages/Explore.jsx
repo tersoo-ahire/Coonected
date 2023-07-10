@@ -11,34 +11,33 @@ import Places from "../components/Places";
 import ProductsExplore from "../components/ProductsExplore";
 import Lifestyle from "../components/Lifestyle";
 import EventsExplore from "../components/EventsExplore";
+import Navbar from "../components/Navbar";
 
 export default function Explore() {
     // EXPLORE PAGE SECTION
     return (
-        <section className="explore-page">
-            <div className="left-section">
-                <div className="top-area">
-                    <div className="search-nav">
-                        <Search/>
-                        <Navigation/>
+        <>
+            <Navbar/>
+            <section className="explore-page">
+                <div className="left-section">
+                    <div className="top-area">
+                        <ExploreNav/>
                     </div>
-                    <ExploreNav/>
+                    <div className="bottom-area">
+                        <Routes>
+                            <Route path="/" element={<Navigate to="media" replace />} />
+                            <Route path="/media" element={<Media/>} />
+                            <Route path="/places" element={<Places/>} />
+                            <Route path="/products" element={<ProductsExplore/>} />
+                            <Route path="/lifestyle" element={<Lifestyle/>} />
+                            <Route path="/events" element={<EventsExplore/>} />                        
+                        </Routes>
+                    </div>
                 </div>
-                <div className="bottom-area">
-                    <Routes>
-                        <Route path="/" element={<Navigate to="media" replace />} />
-                        <Route path="/media" element={<Media/>} />
-                        <Route path="/places" element={<Places/>} />
-                        <Route path="/products" element={<ProductsExplore/>} />
-                        <Route path="/lifestyle" element={<Lifestyle/>} />
-                        <Route path="/events" element={<EventsExplore/>} />                        
-                    </Routes>
+                <div className="right-section">
+                    <Activities/>
                 </div>
-            </div>
-            <div className="right-section">
-                <UserProfile/>
-                <Activities/>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }

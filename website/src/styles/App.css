@@ -4,6 +4,7 @@
   outline: 0;
   box-sizing: border-box;
   min-height: 100vh;
+  position: relative;
 }
 
 h2 {
@@ -19,8 +20,11 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 4em;
-  padding: 0.5em 1em;
-  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.1);
+  padding: 0.5em 2em;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 999999;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.15);
 }
 nav .left {
   display: flex;
@@ -32,13 +36,22 @@ nav .center {
   width: 50%;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
+}
+nav .center a {
+  padding: 0.75em 1.5em;
+}
+nav .center a.active {
+  border-bottom: 5px solid #3377FF;
+}
+nav .center a:hover {
+  background-color: rgba(74, 74, 74, 0.0588235294);
+  border-radius: 15px;
 }
 nav .right {
   display: flex;
   width: 25%;
   justify-content: flex-end;
-  border: 1px solid red;
 }
 
 .submit, .invitation-page .sub2 a, .sign-in .right .right-sub .signup-container .submit2 {
@@ -484,6 +497,7 @@ nav .right {
   background-color: #E7F0FA;
   width: 100%;
   max-height: 100vh;
+  padding-top: 4em;
 }
 .home-page .left {
   display: flex;
@@ -500,7 +514,7 @@ nav .right {
   flex-direction: column;
   width: 45%;
   max-height: 100vh;
-  padding: 0em 2em 2em 2em;
+  padding: 3em 2em 2em 2em;
   background-color: rgba(255, 255, 255, 0.6588235294);
   align-items: center;
   gap: 2em;
@@ -646,8 +660,8 @@ nav .right {
   flex-direction: row;
   align-items: center;
   background-color: rgba(220, 220, 220, 0.4901960784);
-  border-radius: 16px;
-  padding: 0em 0.5em;
+  border-radius: 30px;
+  padding: 0em 1em;
   gap: 0.5em;
   color: #363636;
 }
@@ -763,32 +777,6 @@ nav .right {
   border-radius: 4px;
 }
 .connection-container .connection-sub-container::-webkit-scrollbar-thumb:hover {
-  background-color: #3377FF;
-}
-
-.navigation-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 1.5em 1em 1em 1em;
-  background: rgba(51, 119, 255, 0.12);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-  border-radius: 0px 0px 20px 20px;
-}
-.navigation-container a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0.5em;
-  border-radius: 8px;
-}
-.navigation-container a img {
-  width: 30px;
-}
-.navigation-container a:hover {
   background-color: #3377FF;
 }
 
@@ -1039,6 +1027,9 @@ nav .right {
   justify-content: flex-end;
   gap: 1em;
   text-decoration: none;
+}
+.user-profile-container .profile {
+  width: 40px;
 }
 .user-profile-container span {
   color: #3F3F3F;
@@ -1422,6 +1413,7 @@ nav .right {
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.6588235294);
   width: 100%;
+  padding-top: 4em;
 }
 .profile-page .left-section {
   display: flex;
@@ -1437,9 +1429,9 @@ nav .right {
   display: flex;
   flex-direction: column;
   width: 75%;
-  padding: 0em 2em;
+  padding: 3em 2em 0em 2em;
   gap: 2em;
-  max-height: 100vh;
+  max-height: 89.5vh;
   overflow-y: scroll;
 }
 .profile-page .right-section .top-container {
@@ -1447,13 +1439,6 @@ nav .right {
   flex-direction: column;
   width: 100%;
   gap: 2em;
-}
-.profile-page .right-section .top-container .first-area {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-left: 1em;
-  gap: 3em;
 }
 .profile-page .right-section .top-container .second-area {
   display: flex;
@@ -1657,24 +1642,19 @@ nav .right {
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.6588235294);
   width: 100%;
+  padding-top: 4em;
 }
 .explore-page .left-section {
   display: flex;
   flex-direction: column;
   width: 75%;
+  padding-top: 2em;
 }
 .explore-page .left-section .top-area {
   display: flex;
   flex-direction: column;
   gap: 2em;
   padding: 0em 2em;
-}
-.explore-page .left-section .top-area .search-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 3em;
 }
 .explore-page .left-section .bottom-area {
   display: flex;
@@ -1693,7 +1673,7 @@ nav .right {
 .explore-links-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 0.5em;
   padding: 1em 0em;
 }
@@ -1779,6 +1759,7 @@ nav .right {
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.6588235294);
   width: 100%;
+  padding-top: 4em;
 }
 .books-page .left-section {
   display: flex;
