@@ -42,7 +42,14 @@ nav .center a {
   padding: 0.75em 1.5em;
 }
 nav .center a.active {
-  border-bottom: 5px solid #3377FF;
+  border-radius: 0;
+  border-bottom: 4px solid #3377FF;
+}
+nav .center a.active svg {
+  fill: #007bff; /* Replace with your primary blue color */
+}
+nav .center a.active:hover {
+  border-radius: 0;
 }
 nav .center a:hover {
   background-color: rgba(74, 74, 74, 0.0588235294);

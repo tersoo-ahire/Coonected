@@ -47,13 +47,23 @@ nav {
         }
 
         a.active {
-            border-bottom: 5px solid $primaryblue;
+            border-radius: 0;
+            border-bottom: 4px solid $primaryblue;
+            svg {
+                fill: #007bff; /* Replace with your primary blue color */
+            }
         }
+    
+        a.active:hover {
+            border-radius: 0;
+        }
+
 
         a:hover {
             background-color: #4a4a4a0f;
             border-radius: 15px;
         }
+
     }
 
     .right {

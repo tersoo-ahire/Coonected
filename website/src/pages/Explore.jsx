@@ -1,9 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Search from "../components/Search";
-import UserProfile from "../components/Userprofile";
 import Activities from "../components/Activities";
-import Navigation from "../components/Navigation";
 import ExploreNav from "../components/ExploreNav";
 // EXPLORE SUB COMPONENTS
 import Media from "../components/Media";
