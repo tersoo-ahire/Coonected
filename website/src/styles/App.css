@@ -13,6 +13,34 @@ h2 {
   margin: 0;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4em;
+  padding: 0.5em 1em;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.1);
+}
+nav .left {
+  display: flex;
+  width: 25%;
+  justify-content: flex-start;
+}
+nav .center {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+nav .right {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+  border: 1px solid red;
+}
+
 .submit, .invitation-page .sub2 a, .sign-in .right .right-sub .signup-container .submit2 {
   display: flex;
   flex-direction: row;
@@ -611,7 +639,7 @@ h2 {
   gap: 0.5em;
 }
 .search-container img {
-  width: 60px;
+  width: 50px;
 }
 .search-container .input-container {
   display: flex;
@@ -619,18 +647,17 @@ h2 {
   align-items: center;
   background-color: rgba(220, 220, 220, 0.4901960784);
   border-radius: 16px;
-  padding: 1em;
+  padding: 0em 0.5em;
   gap: 0.5em;
   color: #363636;
 }
 .search-container .input-container img {
-  width: 24px;
+  width: 20px;
 }
 .search-container .input-container input {
   background-color: rgba(220, 220, 220, 0);
   border: rgba(220, 220, 220, 0.4901960784);
   outline: none;
-  height: 20px;
   font-size: 1rem;
   color: rgb(0, 0, 0);
   width: 100%;

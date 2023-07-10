@@ -11,11 +11,13 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Explore from "./pages/Explore";
 import Books from "./pages/Books";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <>
       <Routes>
+        <Route path="/navbar" element={<Navbar />} />
         <Route path="/" element={<Signin />} />
         <Route path="/sign-in" element={<Signin />} />
         <Route path="/sign-up" element={<Signup />} />
