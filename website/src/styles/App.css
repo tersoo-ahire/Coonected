@@ -40,13 +40,11 @@ nav .center {
 }
 nav .center a {
   padding: 0.75em 1.5em;
+  border-bottom: 4px solid transparent;
 }
 nav .center a.active {
   border-radius: 0;
   border-bottom: 4px solid #3377FF;
-}
-nav .center a.active svg {
-  fill: #007bff; /* Replace with your primary blue color */
 }
 nav .center a.active:hover {
   border-radius: 0;
@@ -1772,7 +1770,7 @@ nav .right {
   display: flex;
   flex-direction: column;
   width: 75%;
-  padding: 2em;
+  padding: 3em 2em 0em 2em;
   gap: 2em;
 }
 .books-page .left-section h1 {

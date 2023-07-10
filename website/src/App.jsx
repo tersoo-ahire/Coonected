@@ -11,7 +11,9 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Explore from "./pages/Explore";
 import Books from "./pages/Books";
+import Group from "./pages/Group";
 import Navbar from "./components/Navbar";
+import Message from "./pages/Message";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/profile/*" element={<Profile />} />
         <Route path="/explore/*" element={<Explore />} />
         <Route path="/books/*" element={<Books />} />
+        <Route path="/group" element={<Group />} />
+        <Route path="/message" element={<Message />} />
       </Routes>
     </>
   );
