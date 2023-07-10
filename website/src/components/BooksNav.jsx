@@ -9,7 +9,7 @@ export default function BooksNav() {
       <Link to="/books/all" className={ location.pathname === "/books/all" ? "active" : ""}>
         All
       </Link>
-      <Link to="/books/ebooks" className={ location.pathname === "/books/ebooks" ? "active" : ""}>
+      <Link to="/books/ebooks" className={ location.pathname.startsWith("/books/ebooks") ? "active" : ""}>
         eBooks
       </Link>
       <Link to="/books/audiobooks" className={ location.pathname === "/books/audiobooks" ? "active" : ""}>
