@@ -2365,3 +2365,21 @@ nav {
         }
     }
 }
+
+// MESSAGE SECTION
+.message-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 100vh;
+    padding-top: 4em;
+}
+
+// GROUP SECTION
+.group-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 100vh;
+    padding-top: 4em; 
+}

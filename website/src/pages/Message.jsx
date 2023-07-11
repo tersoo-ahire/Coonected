@@ -5,7 +5,9 @@ export default function Message(){
     return (
         <>
             <Navbar/>
-            <h1 style={{paddingTop: "4em"}}>Message Page</h1>
+            <section className="message-page">
+                <h1>Message Page</h1>
+            </section>
         </>
     )
 } 

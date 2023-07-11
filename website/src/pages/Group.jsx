@@ -5,7 +5,9 @@ export default function Group(){
     return (
         <>
             <Navbar/>
-            <h1 style={{paddingTop: "4em"}}>Group Page</h1>
+            <section className="group-page">
+                <h1>Group Page</h1>
+            </section>
         </>
     )
 } 
