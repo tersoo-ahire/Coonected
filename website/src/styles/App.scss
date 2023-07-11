@@ -50,16 +50,17 @@ nav {
         a.active {
             border-radius: 0;
             border-bottom: 4px solid $primaryblue;
+            background-color: #3377ff3e;
         }
     
         a.active:hover {
             border-radius: 0;
+            background-color: #3377ff3e;
         }
 
 
         a:hover {
             background-color: #4a4a4a0f;
-            border-radius: 15px;
         }
 
     }

@@ -45,13 +45,14 @@ nav .center a {
 nav .center a.active {
   border-radius: 0;
   border-bottom: 4px solid #3377FF;
+  background-color: rgba(51, 119, 255, 0.2431372549);
 }
 nav .center a.active:hover {
   border-radius: 0;
+  background-color: rgba(51, 119, 255, 0.2431372549);
 }
 nav .center a:hover {
   background-color: rgba(74, 74, 74, 0.0588235294);
-  border-radius: 15px;
 }
 nav .right {
   display: flex;
